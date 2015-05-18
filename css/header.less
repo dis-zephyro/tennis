@@ -109,24 +109,95 @@
 
 .topnav {
 
+	@media  (min-width: 960px) {
+		top: 85px;
+		left: 59px;
+		right: 13px;
+		height: 48px;
+		z-index: 999;
+		position: absolute;
+	}
+
 	ul {
-		width: 980px;
-		height: 40px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
 		display: table;
+		list-style: none;
 
 		li {
-			height: 40px;
-			line-height: 40px;
+			height: 49px;
+			line-height: 49px;
 			text-align: center;
 			display: table-cell;
+			position: relative;
+			background: url("../img/bg_topnav.jpg") -5px 0 no-repeat;
+
+			&:after {
+				top:0;
+				content: "";
+				right: -19px;
+				width: 23px;
+				height: 49px;
+				z-index: 1000;
+				position: absolute;
+				background: url("../img/topnav_shadow.png") 0 0 no-repeat;
+			}
+
+			&:first-child {
+				background-position: 0 0;
+
+				&.active {
+					border-left: 1px solid #fff;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:last-child {
+				.border-radius(0 5px 0 0);
+
+				&::after {
+					display: none !important;
+				}
+			}
 
 			a {
+				width: 100%;
+				height: 100%;
 				color: #fff;
+				font-size: 10px;
+				font-weight: 700;
+				display: inline-block;
 				text-decoration: none;
+				text-transform: uppercase;
+				text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
 			}
 			a:hover {
-				color: #fff;
+				color: #f7cb33;
 				text-decoration: none;
+			}
+			
+			&.active {
+				z-index: 1002;
+				background: url("../img/topnav_active.png") 0 0 repeat-x;
+
+				&:before {
+					top:0;
+					content: "";
+					left: -19px;
+					width: 23px;
+					height: 49px;
+					z-index: 1000;
+					position: absolute;
+					background: url("../img/topnav_shadow-active.png") 0 0 no-repeat;
+				}
+
+				a {
+					color: #282a2b;
+				}
 			}
 		}
 	}

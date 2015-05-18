@@ -183,24 +183,89 @@
     top: 1px;
   }
 }
+@media (min-width: 960px) {
+  .topnav {
+    top: 85px;
+    left: 59px;
+    right: 13px;
+    height: 48px;
+    z-index: 999;
+    position: absolute;
+  }
+}
 .topnav ul {
-  width: 980px;
-  height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   display: table;
+  list-style: none;
 }
 .topnav ul li {
-  height: 40px;
-  line-height: 40px;
+  height: 49px;
+  line-height: 49px;
   text-align: center;
   display: table-cell;
+  position: relative;
+  background: url("../img/bg_topnav.jpg") -5px 0 no-repeat;
+}
+.topnav ul li:after {
+  top: 0;
+  content: "";
+  right: -19px;
+  width: 23px;
+  height: 49px;
+  z-index: 1000;
+  position: absolute;
+  background: url("../img/topnav_shadow.png") 0 0 no-repeat;
+}
+.topnav ul li:first-child {
+  background-position: 0 0;
+}
+.topnav ul li:first-child.active {
+  border-left: 1px solid #fff;
+}
+.topnav ul li:first-child.active:before {
+  display: none;
+}
+.topnav ul li:last-child {
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+.topnav ul li:last-child::after {
+  display: none !important;
 }
 .topnav ul li a {
+  width: 100%;
+  height: 100%;
   color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
   text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
 }
 .topnav ul li a:hover {
-  color: #fff;
+  color: #f7cb33;
   text-decoration: none;
+}
+.topnav ul li.active {
+  z-index: 1002;
+  background: url("../img/topnav_active.png") 0 0 repeat-x;
+}
+.topnav ul li.active:before {
+  top: 0;
+  content: "";
+  left: -19px;
+  width: 23px;
+  height: 49px;
+  z-index: 1000;
+  position: absolute;
+  background: url("../img/topnav_shadow-active.png") 0 0 no-repeat;
+}
+.topnav ul li.active a {
+  color: #282a2b;
 }
 /* Base styles
    ========================= */
@@ -273,8 +338,8 @@ hr {
   }
 }
 .content {
-  height: 1100px;
   z-index: 5;
+  height: 1100px;
   background: #fff;
   margin-left: 59px;
   margin-right: 13px;
@@ -282,6 +347,11 @@ hr {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.26);
+}
+@media (min-width: 960px) {
+  .content {
+    margin-top: 5px;
+  }
 }
 @media (min-width: 960px) {
   .footer {
