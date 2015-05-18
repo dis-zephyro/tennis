@@ -69,6 +69,51 @@
 .text-right {
   text-align: right !important;
 }
+/* Buttons */
+.btn-more {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  background: #b1ab63;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IxYWI2MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2YxZTliYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWVlYmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #b1ab63 0%, #f1e9ba 80%, #f5eebe 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1ab63), color-stop(80%, #f1e9ba), color-stop(100%, #f5eebe));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #b1ab63 0%, #f1e9ba 80%, #f5eebe 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #b1ab63 0%, #f1e9ba 80%, #f5eebe 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #b1ab63 0%, #f1e9ba 80%, #f5eebe 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #b1ab63 0%, #f1e9ba 80%, #f5eebe 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b1ab63', endColorstr='#f5eebe', GradientType=0);
+  /* IE6-8 */
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-more span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../img/btn-more.png") center no-repeat;
+  -webkit-box-shadow: inset 0px 0px 3px 0px #fefaf3;
+  -moz-box-shadow: inset 0px 0px 3px 0px #fefaf3;
+  box-shadow: inset 0px 0px 3px 0px #fefaf3;
+}
 @media (min-width: 960px) {
   .header {
     height: 95px;
@@ -339,7 +384,6 @@ hr {
 }
 .content {
   z-index: 5;
-  height: 1100px;
   background: #fff;
   margin-left: 59px;
   margin-right: 13px;
@@ -351,6 +395,75 @@ hr {
 @media (min-width: 960px) {
   .content {
     margin-top: 5px;
+    padding: 63px 20px 0 20px;
+  }
+}
+@media (min-width: 960px) {
+  .tiles {
+    margin-right: -15px;
+  }
+  .tiles .tile {
+    float: left;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 14px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../img/tiles.jpg");
+    -webkit-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  .tiles .tile h4 {
+    margin: 0;
+    padding: 0;
+    top: 25px;
+    left: 30px;
+    width: 160px;
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+  }
+  .tiles .tile .btn-more {
+    right: 27px;
+    bottom: 25px;
+    position: absolute;
+  }
+  .tiles .tile-xl {
+    width: 846px;
+    height: 330px;
+    background-position: 0 0;
+  }
+  .tiles .tile-l {
+    width: 416px;
+    height: 240px;
+    background-position: 0 -330px;
+  }
+  .tiles .tile-m {
+    width: 416px;
+    height: 200px;
+    background-position: 0 -570px;
+  }
+  .tiles .tile-m h4 {
+    top: 38px;
+    width: auto;
+    text-transform: uppercase;
+  }
+  .tiles .tile-m .tile-text {
+    top: 90px;
+    left: 30px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    position: absolute;
+  }
+  .tiles .tile-s {
+    width: 200px;
+    height: 240px;
+    background-position: -416px -330px;
   }
 }
 @media (min-width: 960px) {
