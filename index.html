@@ -19,22 +19,30 @@
     <body>
         <header class="header">
             <div class="container">
+                <span id="pull"></span>
                 <div class="logo ir">Tennis.ru</div>
                 <div class="header-phone">+7 (495) 980 10 10</div>
                 <div class="header-map">
                     <span>г. Москва, ул. Летовская Малая, 8</span>
                     <a href="#">Схема проезда</a>
                 </div>
-                <a href="#" class="btn-card"><span><i class="icon"></i>Клубные карты</span></a>
+                <a href="#" class="btn-card"><span class="btn-card-inner"><i class="icon"></i><span>Клубные карты</span></span></a>
                 <nav class="topnav">
                     <ul>
-                        <li class="active"><a href="#">Новый фитнес-клуб и школа тенниса</a></li>
+                        <li class="active"><a href="#"><span class="visible-l">Новый фитнес-клуб и школа тенниса</span><span class="visible-m">Главная</span></a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Приобрести карту</a></li>
                         <li><a href="#">Расписания</a></li>
                         <li><a href="#">Контакты</a></li>
                         <li><a href="#">Акции и программы</a></li>
                     </ul>
+                    <div class="vcard">
+                        <div class="adr">г. Москва, ул. Летовская Малая, 8</div>
+                        <div class="tel">+ 7 (495) 980 10 10</div>
+                        <div class="mail">  <a href="mailto:mirtennisa@gmail.com">mirtennisa@gmail.com</a></div>
+
+                    </div>
+                    <span class="close"></span>
                 </nav>
             </div>
         </header>
@@ -46,52 +54,73 @@
                 <div class="content">
                     <div class="tiles clearfix">
                         <div class="tile tile-xl">
-                            <img class="img-responsive" src="images/img_tile1.jpg" alt="Новый фитнес=клуб и школа тенниса">
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile1.jpg" alt="Новый фитнес=клуб и школа тенниса">
+                            </div>
+
                         </div>
                         <div class="tile tile-m">
-                            <img class="img-responsive" src="images/img_tile2.jpg" alt="Виртуальный тур">
-                            <h4 class="tile-title">Виртуальный тур</h4>
-                            <div class="tile-text">универсальный фитнес-клуб и школа тениса в Москве, панорама, виртуальный тур</div>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile2.jpg" alt="Виртуальный тур">
+                                <h4 class="tile-title">Виртуальный тур</h4>
+                                <div class="tile-text">универсальный фитнес-клуб и школа тениса в Москве, панорама, виртуальный тур</div>
+                            </div>
                         </div>
                         <div class="tile tile-m">
-                            <img class="img-responsive" src="images/img_tile3.jpg" alt="Кубок Кремля">
-                            <h4 class="tile-title">кубок кремля</h4>
-                            <div class="tile-text">традиционный международный теннисный турнир, который проводится ежегодно осенью в Москве в спорткомплексе «Олимпийский»</div>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile3.jpg" alt="Кубок Кремля">
+                                <h4 class="tile-title">кубок кремля</h4>
+                                <div class="tile-text">традиционный международный теннисный турнир, который проводится ежегодно осенью в Москве в спорткомплексе «Олимпийский»</div>
+                            </div>
                         </div>
                         <div class="tile tile-l">
-                            <img class="img-responsive" src="images/img_tile4.jpg" alt="Современный фитнес">
-                            <h4>Современный фитнес</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile4.jpg" alt="Современный фитнес">
+                                <h4>Современный фитнес</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile5.jpg" alt="Батутный клуб">
-                            <h4>Батутный клуб</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile5.jpg" alt="Батутный клуб">
+                                <h4>Батутный клуб</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile6.jpg" alt="Бассейн">
-                            <h4>Бассейн</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile6.jpg" alt="Бассейн">
+                                <h4>Бассейн</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile7.jpg" alt="Групповые программы">
-                            <h4>Групповые программы</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile7.jpg" alt="Групповые программы">
+                                <h4>Групповые программы</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile8.jpg" alt="Теннисные корты">
-                            <h4>Теннисные корты</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile8.jpg" alt="Теннисные корты">
+                                <h4>Теннисные корты</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile9.jpg" alt="Детский клуб">
-                            <h4>Детский клуб</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile9.jpg" alt="Детский клуб">
+                                <h4>Детский клуб</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                         <div class="tile tile-s">
-                            <img class="img-responsive" src="images/img_tile10.jpg" alt="Бойцовский клуб">
-                            <h4>Бойцовский клуб</h4>
-                            <a href="#" class="btn-more"><span></span></a>
+                            <div class="tile-inner">
+                                <img class="img-responsive" src="images/img_tile10.jpg" alt="Бойцовский клуб">
+                                <h4>Бойцовский клуб</h4>
+                                <a href="#" class="btn-more"><span></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>

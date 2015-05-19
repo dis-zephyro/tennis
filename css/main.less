@@ -27,31 +27,28 @@ textarea {
 html {
 	font-size: 14px;
 	min-height: 100%;
+	background: #fff;
 	position: relative;
-	background: url("../img/bg.jpg");
+
+	@media  (min-width: 960px) {
+		background: url("../img/bg.jpg");
+	}
+
 }
-
-body {
-	min-height: 100%;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-
-
-
 
 .container {
-	width: 960px;
+	width: 360px;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
+
+	@media  (min-width: 590px) {
+		width: 590px;
+	}
+
+	@media  (min-width: 640px) {
+		width: 640px;
+	}
 
 	@media  (min-width: 960px) {
 		width: 960px;
@@ -61,6 +58,7 @@ hr {
 .page {
 
 	.tabs {
+		display: none;
 
 	}
 
@@ -72,6 +70,7 @@ hr {
 			left: 0;
 			width: 59px;
 			height: 100%;
+			display: block;
 			position: absolute;
 			background: url("../img/pattern1.png");
 
@@ -94,96 +93,172 @@ hr {
 			}
 		}
 	}
+
+	.tiles-wrap {
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
 .content {
 	z-index: 5;
 	background: #fff;
-	margin-left: 59px;
-	margin-right: 13px;
 	position: relative;
-	.box-shadow( 0px 0px 5px 0px rgba(0, 0, 0, 0.26));
+	padding: 20px 11px 0 11px;
+
+	@media  (min-width: 590px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media  (min-width: 640px) {
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+
 
 	@media  (min-width: 960px) {
 		margin-top: 5px;
 		padding: 63px 20px 0 20px;
+		margin-left: 59px;
+		margin-right: 13px;
+		.box-shadow( 0px 0px 5px 0px rgba(0, 0, 0, 0.26));
 	}
 }
 
 .tiles {
+	margin-right: -10px;
+
+	h4,
+	.tile-text,
+	.btn-more {
+		display: none;
+	}
+
+	.tile {
+		float: left;
+		color: #fff;
+		background: #000;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 10px;
+		border: 10px solid #eb8f00;
+		.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
+
+		&.tile-xl {
+			width: 338px;
+			height: 220px;
+		}
+
+		&.tile-l {
+			width: 338px;
+			height: 160px;
+		}
+
+		&.tile-m {
+			width: 338px;
+			height: 160px;
+		}
+
+		&.tile-s{
+			width: 163px;
+			height: 210px;
+			margin-right: 10px;
+		}
+
+	}
+
+	@media  (min-width: 590px) {
+		.tile {
+
+			&.tile-xl {
+				width: 550px;
+				height: 350px;
+			}
+
+			&.tile-l {
+				width: 550px;
+				height: 320px;
+			}
+
+			&.tile-m {
+				width: 550px;
+				height: 220px;
+			}
+
+			&.tile-s{
+				width: 270px;
+				height: 340px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	@media  (min-width: 640px) {
+		margin-left: -10px;
+
+		.tile {
+			margin-bottom: 15px;
+
+			&.tile-xl {
+				width: 618px;
+				height: 260px;
+				margin-left: 10px;
+			}
+
+			&.tile-l {
+				width: 618px;
+				height: 200px;
+				margin-left: 10px;
+			}
+
+			&.tile-m {
+				width: 618px;
+				height: 190px;
+				margin-left: 10px;
+			}
+
+			&.tile-s{
+				width: 193px;
+				height: 230px;
+				margin-right: 10px;
+				margin-left: 9px;
+			}
+		}
+	}
 
 	@media  (min-width: 960px) {
-
+		margin-left: 0;
 		margin-right: -15px;
 
 		.tile {
-			float: left;
-			color: #fff;
-			padding: 10px;
-			overflow: hidden;
-			position: relative;
 			margin-right: 14px;
 			margin-bottom: 16px;
-			background-repeat: no-repeat;
-			background-image: url("../img/tiles.jpg");
-			.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
 
-			h4 {
-				margin: 0;
-				padding: 0;
-				top: 25px;
-				left: 30px;
-				width: 160px;
-				font-size: 24px;
-				line-height: 24px;
-				position: absolute;
+			&.tile-xl {
+				width: 846px;
+				height: 330px;
+				margin-left: 0;
 			}
 
-			.btn-more {
-				right: 27px;
-				bottom: 25px;
-				position: absolute;
-			}
-		}
-
-		.tile-xl {
-			width: 846px;
-			height: 330px;
-			background-position: 0 0;
-		}
-
-		.tile-l {
-			width: 416px;
-			height: 240px;
-			background-position: 0 -330px;
-		}
-
-		.tile-m {
-			width: 416px;
-			height: 200px;
-			background-position: 0 -570px;
-
-			h4 {
-				top: 38px;
-				width: auto;
-				text-transform: uppercase;
+			&.tile-l {
+				width: 416px;
+				height: 240px;
+				margin-left: 0;
 			}
 
-			.tile-text {
-				top: 90px;
-				left: 30px;
+			&.tile-m {
+				width: 416px;
+				height: 200px;
+				margin-left: 0;
+			}
+
+			&.tile-s{
 				width: 200px;
-				font-size: 12px;
-				line-height: 16px;
-				font-weight: 600;
-				position: absolute;
+				height: 240px;
+				margin-left: 0;
+				margin-right: 14px;
 			}
-		}
-
-		.tile-s{
-			width: 200px;
-			height: 240px;
-			background-position: -416px -330px;
 		}
 	}
 }
@@ -192,8 +267,10 @@ hr {
 
 
 .footer {
+	display: none;
 
 	@media  (min-width: 960px) {
+		display: block;
 		height: 250px;
 		padding: 160px 13px 0 59px;
 		background: url("../img/footer_bg.png") top right no-repeat;
