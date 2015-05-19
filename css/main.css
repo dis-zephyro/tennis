@@ -862,31 +862,101 @@ html {
   position: relative;
   background: #000;
 }
+.tiles .tile .tile-inner.img2 {
+  background: url("../images/img_tile2s.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img3 {
+  background: url("../images/img_tile3s.jpg") 100% 100% no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img4 {
+  background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img5 {
+  background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img6 {
+  background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img7 {
+  background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img8 {
+  background: url("../images/img_tile8l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img9 {
+  background: url("../images/img_tile9l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.tiles .tile .tile-inner.img10 {
+  background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
 .tiles .tile .tile-text {
+  color: #fff;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   overflow: hidden;
   position: absolute;
 }
 .tiles .tile .tile-text h1 {
   color: #fff;
   padding: 0;
-  margin: 0 50px 0 0;
+  margin: 0 50px 0 -10px;
   font: 700 20px 'Ubuntu', sans-serif;
   text-transform: uppercase;
+}
+.tiles .tile .tile-text h4 {
+  padding: 0;
+  max-width: 140px;
+  margin: 3px 0 10px 0;
+  font: 700 18px 'Ubuntu', sans-serif;
+}
+.tiles .tile .tile-text .title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font: 700 24px/36px 'Ubuntu', sans-serif;
+}
+.tiles .tile .tile-text .title a {
+  color: #fff;
+  text-decoration: none;
+}
+.tiles .tile .tile-text .tile-divider {
+  width: 80px;
+  margin-bottom: 15px;
+  border-top: 2px solid #fff;
+}
+.tiles .tile .tile-text p {
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 0;
+  font: 400 12px 'Ubuntu', sans-serif;
+}
+.tiles .tile .tile-text .btn-more {
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
 }
 .tiles .tile.tile-xl {
   width: 338px;
   height: 220px;
   background-position: 0 0;
 }
-.tiles .tile.tile-xl img {
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: block;
+.tiles .tile.tile-xl .tile-img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
+  background: url("../images/tile-xl_small.png") 0 0 no-repeat;
 }
 .tiles .tile.tile-l {
   width: 338px;
@@ -913,14 +983,77 @@ html {
     -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
   }
+  .tiles .tile .tile-inner.img2 {
+    background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img3 {
+    background: url("../images/img_tile3xl.jpg") 100% 100% no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img4 {
+    background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
+  }
+  .tiles .tile .tile-inner.img5 {
+    background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
+    background-size: auto;
+  }
+  .tiles .tile .tile-inner.img6 {
+    background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img7 {
+    background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img8 {
+    background: url("../images/img_tile8l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img9 {
+    background: url("../images/img_tile9l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img10 {
+    background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
   .tiles .tile .tile-text h1 {
     font-size: 36px;
-    margin-right: 80px;
+    margin: 5px 60px 0 0;
+  }
+  .tiles .tile .tile-text h4 {
+    max-width: 180px;
+    font-size: 24px;
+    line-height: 24px;
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.35);
+  }
+  .tiles .tile .tile-text .title {
+    font-size: 36px;
+    margin: 6px 0 15px 0;
+  }
+  .tiles .tile .tile-text .tile-divider {
+    width: 80px;
+    margin-bottom: 15px;
+    border-top: 2px solid #fff;
+  }
+  .tiles .tile .tile-text p {
+    width: 320px;
+    height: auto;
+    font-size: 14px;
+  }
+  .tiles .tile .tile-text .btn-more {
+    left: auto;
+    right: 17px;
+    bottom: 15px;
   }
   .tiles .tile.tile-xl {
     width: 548px;
     height: 350px;
     background-position: 0 -400px;
+  }
+  .tiles .tile.tile-xl .tile-img {
+    background: url("../images/tile-xl_med.png") 0 0 no-repeat;
   }
   .tiles .tile.tile-l {
     width: 548px;
@@ -940,7 +1073,7 @@ html {
 }
 @media (min-width: 720px) {
   .tiles {
-    margin: 0 -18px -10px -18px;
+    margin: 0 -18px 0 -18px;
   }
   .tiles .tile {
     margin: 0 9px 10px 9px;
@@ -948,19 +1081,82 @@ html {
     -moz-box-shadow: 0px -3px 4px 0px rgba(102, 102, 102, 0.3);
     box-shadow: 0px -3px 4px 0px rgba(102, 102, 102, 0.3);
   }
+  .tiles .tile .tile-inner.img2 {
+    background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img3 {
+    background: url("../images/img_tile3m.jpg") 100% 100% no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img4 {
+    background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
+  }
+  .tiles .tile .tile-inner.img5 {
+    background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
+    background-size: auto;
+  }
+  .tiles .tile .tile-inner.img6 {
+    background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img7 {
+    background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img8 {
+    background: url("../images/img_tile8l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img9 {
+    background: url("../images/img_tile9l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img10 {
+    background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-text {
+    z-index: 10;
+  }
   .tiles .tile .tile-text h1 {
     font-size: 30px;
-    margin-right: 160px;
+    margin-left: 10px;
+    margin-right: 130px;
+  }
+  .tiles .tile .tile-text h4 {
+    max-width: 180px;
+    font-size: 24px;
+    line-height: 24px;
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.35);
+  }
+  .tiles .tile .tile-text .title {
+    font-size: 24px;
+    margin: 6px 0 15px 10px;
+  }
+  .tiles .tile .tile-text .tile-divider {
+    width: 80px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-top: 2px solid #fff;
+  }
+  .tiles .tile .tile-text p {
+    width: 320px;
+    margin-left: 10px;
   }
   .tiles .tile.tile-xl {
     width: 618px;
     height: 260px;
     background-position: -560px 0;
   }
+  .tiles .tile.tile-xl .tile-img {
+    z-index: 1;
+    background: url("../images/tile-xl_large.jpg") 0 0 no-repeat;
+  }
   .tiles .tile.tile-l {
     width: 618px;
-    height: 200px;
-    background-position: -1178px 0;
+    height: 190px;
+    background-position: -830px -990px;
   }
   .tiles .tile.tile-m {
     width: 618px;
@@ -983,14 +1179,80 @@ html {
     -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
   }
+  .tiles .tile .tile-inner.img2 {
+    background: url("../images/img_tile2l.jpg") 0 0 no-repeat;
+  }
+  .tiles .tile .tile-inner.img3 {
+    background: url("../images/img_tile3l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img4 {
+    background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img5 {
+    background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img6 {
+    background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img7 {
+    background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img8 {
+    background: url("../images/img_tile8l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img9 {
+    background: url("../images/img_tile9l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-inner.img10 {
+    background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .tiles .tile .tile-text {
+    z-index: 10;
+  }
   .tiles .tile .tile-text h1 {
     font-size: 36px;
-    margin-right: 320px;
+    margin-left: 5px;
+    padding-top: 8px;
+    margin-right: 280px;
+  }
+  .tiles .tile .tile-text h4 {
+    max-width: 180px;
+    font-size: 24px;
+    line-height: 24px;
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.35);
+  }
+  .tiles .tile .tile-text .title {
+    font-size: 24px;
+    margin: 6px 0 15px 0;
+  }
+  .tiles .tile .tile-text .tile-divider {
+    width: 80px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    border-top: 2px solid #fff;
+  }
+  .tiles .tile .tile-text p {
+    width: 200px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 0;
   }
   .tiles .tile.tile-xl {
     width: 848px;
     height: 330px;
     background-position: -560px -400px;
+  }
+  .tiles .tile.tile-xl .tile-img {
+    z-index: 1;
+    background: url("../images/tile-xl_extra.jpg") 0 0 no-repeat;
   }
   .tiles .tile.tile-l {
     width: 415px;
@@ -1006,140 +1268,6 @@ html {
     width: 200px;
     height: 240px;
     background-position: -975px -750px;
-  }
-}
-@media (min-width: 640px) {
-  .tiles .extrasmall {
-    display: none;
-  }
-}
-.tiles .medium {
-  display: none;
-}
-@media (min-width: 640px) {
-  .tiles .medium {
-    display: block;
-  }
-}
-@media (min-width: 720px) {
-  .tiles .medium {
-    display: none;
-  }
-}
-.tiles1 {
-  margin-right: -10px;
-}
-.tiles1 h4,
-.tiles1 .tile-text,
-.tiles1 .btn-more {
-  display: none;
-}
-.tiles1 .tile {
-  float: left;
-  color: #fff;
-  background: #000;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 10px;
-  border: 10px solid #eb8f00;
-  -webkit-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
-}
-.tiles1 .tile.tile-xl {
-  width: 338px;
-  height: 220px;
-}
-.tiles1 .tile.tile-l {
-  width: 338px;
-  height: 160px;
-}
-.tiles1 .tile.tile-m {
-  width: 338px;
-  height: 160px;
-}
-.tiles1 .tile.tile-s {
-  width: 163px;
-  height: 210px;
-  margin-right: 10px;
-}
-@media (min-width: 640px) {
-  .tiles1 .tile.tile-xl {
-    width: 550px;
-    height: 350px;
-  }
-  .tiles1 .tile.tile-l {
-    width: 550px;
-    height: 320px;
-  }
-  .tiles1 .tile.tile-m {
-    width: 550px;
-    height: 220px;
-  }
-  .tiles1 .tile.tile-s {
-    width: 270px;
-    height: 340px;
-    margin-right: 10px;
-  }
-}
-@media (min-width: 720px) {
-  .tiles1 {
-    margin-left: -10px;
-  }
-  .tiles1 .tile {
-    margin-bottom: 15px;
-  }
-  .tiles1 .tile.tile-xl {
-    width: 618px;
-    height: 260px;
-    margin-left: 10px;
-  }
-  .tiles1 .tile.tile-l {
-    width: 618px;
-    height: 200px;
-    margin-left: 10px;
-  }
-  .tiles1 .tile.tile-m {
-    width: 618px;
-    height: 190px;
-    margin-left: 10px;
-  }
-  .tiles1 .tile.tile-s {
-    width: 193px;
-    height: 230px;
-    margin-right: 10px;
-    margin-left: 9px;
-  }
-}
-@media (min-width: 980px) {
-  .tiles1 {
-    margin-left: 0;
-    margin-right: -15px;
-  }
-  .tiles1 .tile {
-    margin-right: 14px;
-    margin-bottom: 16px;
-  }
-  .tiles1 .tile.tile-xl {
-    width: 846px;
-    height: 330px;
-    margin-left: 0;
-  }
-  .tiles1 .tile.tile-l {
-    width: 416px;
-    height: 240px;
-    margin-left: 0;
-  }
-  .tiles1 .tile.tile-m {
-    width: 416px;
-    height: 200px;
-    margin-left: 0;
-  }
-  .tiles1 .tile.tile-s {
-    width: 200px;
-    height: 240px;
-    margin-left: 0;
-    margin-right: 14px;
   }
 }
 .visible-large {
