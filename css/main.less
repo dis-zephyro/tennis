@@ -1,11 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
 
 
 @import "mixing.less";
 @import "form.less";
 @import "header.less";
+@import "footer.less";
+
+// var
+
+@large: 980px;
+@medium: 720px;
+@small: 640px;
+
 
 @font1 : 'Open Sans', sans-serif;
+@font2: 'Ubuntu', sans-serif;
 
 /* Base styles
    ========================= */
@@ -30,10 +40,17 @@ html {
 	background: #fff;
 	position: relative;
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		background: url("../img/bg.jpg");
 	}
 
+}
+
+body {
+
+	@media  (min-width: @large) {
+		background: url("../img/bg-content0.png") top center repeat-y;
+	}
 }
 
 .container {
@@ -42,61 +59,48 @@ html {
 	margin-left: auto;
 	position: relative;
 
-	@media  (min-width: 590px) {
+	@media  (min-width: @small) {
 		width: 590px;
 	}
 
-	@media  (min-width: 640px) {
+	@media  (min-width: @medium) {
 		width: 640px;
 	}
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		width: 960px;
 	}
 }
 
-.page {
 
-	.tabs {
-		display: none;
+.tabs {
+	display: none;
 
-	}
+	@media  (min-width: @large) {
+		top: 0;
+		left: 0;
+		width: 59px;
+		height: 100%;
+		display: block;
+		position: absolute;
 
-	@media  (min-width: 960px) {
-		background: url("../img/bg-content0.png") top center repeat-y;
-
-		.tabs {
-			top: 0;
-			left: 0;
+		.tab1,
+		.tab2 {
 			width: 59px;
-			height: 100%;
-			display: block;
+			height: 60px;
+			cursor: pointer;
 			position: absolute;
-			background: url("../img/pattern1.png");
-
-			.tab1,
-			.tab2 {
-				width: 59px;
-				height: 60px;
-				cursor: pointer;
-				position: absolute;
-			}
-
-			.tab1 {
-				top: 0;
-				background: #fff url("../img/sprites.png") 0 0 no-repeat;
-			}
-
-			.tab2 {
-				top: 60px;
-				background: #81755e url("../img/sprites.png") 0 -60px no-repeat;
-			}
 		}
-	}
 
-	.tiles-wrap {
-		width: 100%;
-		overflow: hidden;
+		.tab1 {
+			top: 0;
+			background: #fff url("../img/sprites.png") 0 0 no-repeat;
+		}
+
+		.tab2 {
+			top: 60px;
+			background: #81755e url("../img/sprites.png") 0 -60px no-repeat;
+		}
 	}
 }
 
@@ -104,29 +108,230 @@ html {
 	z-index: 5;
 	background: #fff;
 	position: relative;
-	padding: 20px 11px 0 11px;
-
-	@media  (min-width: 590px) {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	@media  (min-width: 640px) {
-		padding-left: 11px;
-		padding-right: 11px;
-	}
+	padding: 20px;
 
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		margin-top: 5px;
-		padding: 63px 20px 0 20px;
 		margin-left: 59px;
 		margin-right: 13px;
+		padding-top: 63px;
 		.box-shadow( 0px 0px 5px 0px rgba(0, 0, 0, 0.26));
 	}
 }
 
 .tiles {
+	margin: 0 -15px -15px -15px;
+
+	.tile {
+		float: left;
+		padding: 10px;
+		position: relative;
+		margin: 0 6px 15px 6px;
+		background: url("../img/tiles.jpg") no-repeat;
+		.box-shadow(-1px -3px 4px 1px rgba(102, 102, 102, 0.3));
+
+		.tile-inner {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			background: #000;
+		}
+
+		.tile-text {
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			overflow: hidden;
+			position: absolute;
+
+			h1 {
+				color: #fff;
+				padding: 0;
+				margin: 0 50px 0 0;
+				font: 700 20px @font2;
+				text-transform: uppercase;
+			}
+		}
+
+		&.tile-xl {
+			width: 338px;
+			height: 220px;
+			background-position: 0 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				display: block;
+				position: absolute;
+			}
+		}
+
+		&.tile-l {
+			width: 338px;
+			height: 160px;
+			background-position: 0 -220px;
+		}
+
+		&.tile-m {
+			width: 338px;
+			height: 160px;
+			background-position: 0 -220px;
+		}
+
+		&.tile-xs {
+			width: 163px;
+			height: 220px;
+			background-position: -338px 0;
+		}
+	}
+
+	@media  (min-width: @small) {
+		margin: 0 -5px -10px -5px;
+
+		.tile {
+			margin: 0 5px 10px 5px;
+			.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
+
+			.tile-text {
+
+				h1 {
+					font-size: 36px;
+					margin-right: 80px;
+				}
+			}
+
+			&.tile-xl {
+				width: 548px;
+				height: 350px;
+				background-position: 0 -400px;
+			}
+
+			&.tile-l {
+				width: 548px;
+				height: 320px;
+				background-position: 0 -750px;
+			}
+
+			&.tile-m {
+				width: 548px;
+				height: 220px;
+				background-position: 0 -1070px;
+			}
+
+			&.tile-xs {
+				width: 270px;
+				height: 340px;
+				background-position: -560px -990px;
+			}
+		}
+	}
+
+	@media  (min-width: @medium) {
+		margin: 0 -18px -10px -18px;
+
+		.tile {
+			margin: 0 9px 10px 9px;
+			.box-shadow(0px -3px 4px 0px rgba(102, 102, 102, 0.3));
+
+			.tile-text {
+
+				h1 {
+					font-size: 30px;
+					margin-right: 160px;
+				}
+			}
+
+			&.tile-xl {
+				width: 618px;
+				height: 260px;
+				background-position: -560px 0;
+			}
+
+			&.tile-l {
+				width: 618px;
+				height: 200px;
+				background-position: -1178px 0;
+			}
+
+			&.tile-m {
+				width: 618px;
+				height: 200px;
+				background-position: -1178px 0;
+			}
+
+			&.tile-xs {
+				width: 193px;
+				height: 230px;
+				background-position: -1796px 0;
+			}
+		}
+	}
+
+	@media  (min-width: @large) {
+		margin: 0 -8px -10px -8px;
+
+		.tile {
+			margin: 0 8px 15px 8px;
+			.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
+
+			.tile-text {
+
+				h1 {
+					font-size: 36px;
+					margin-right: 320px;
+				}
+			}
+
+			&.tile-xl {
+				width: 848px;
+				height: 330px;
+				background-position: -560px -400px;
+			}
+
+			&.tile-l {
+				width: 415px;
+				height: 240px;
+				background-position: -560px -750px;
+			}
+
+			&.tile-m {
+				width: 415px;
+				height: 200px;
+				background-position: -1175px -750px;
+			}
+
+			&.tile-xs {
+				width: 200px;
+				height: 240px;
+				background-position: -975px -750px;
+			}
+		}
+	}
+
+	.extrasmall {
+
+		@media  (min-width: @small) {
+			display: none;
+		}
+	}
+
+	.medium {
+		display: none;
+
+		@media  (min-width: @small) {
+			display: block;
+		}
+
+		@media  (min-width: @medium) {
+			display: none;
+		}
+	}
+}
+
+.tiles1 {
 	margin-right: -10px;
 
 	h4,
@@ -165,10 +370,9 @@ html {
 			height: 210px;
 			margin-right: 10px;
 		}
-
 	}
 
-	@media  (min-width: 590px) {
+	@media  (min-width: @small) {
 		.tile {
 
 			&.tile-xl {
@@ -194,7 +398,7 @@ html {
 		}
 	}
 
-	@media  (min-width: 640px) {
+	@media  (min-width: @medium) {
 		margin-left: -10px;
 
 		.tile {
@@ -227,7 +431,7 @@ html {
 		}
 	}
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		margin-left: 0;
 		margin-right: -15px;
 
@@ -264,147 +468,20 @@ html {
 }
 
 
-
-
-.footer {
+.visible-large {
 	display: none;
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		display: block;
-		height: 250px;
-		padding: 160px 13px 0 59px;
-		background: url("../img/footer_bg.png") top right no-repeat;
-
-		.footer-title {
-			height: 32px;
-			color: #625d53;
-			font-size: 12px;
-			font-weight: 700;
-			line-height: 32px;
-			border-color: transparent;
-			text-transform: uppercase;
-			text-shadow: 0px -1px 1px rgba(152, 140, 117, .5);
-		}
-
-	    .social {
-		    float: left;
-		    width: 185px;
-		    margin-left: 19px;
-
-		    ul {
-			    margin: 0;
-			    padding: 0;
-			    list-style: none;
-		    }
-
-		    li {
-			    float: left;
-			    width: 36px;
-			    height: 36px;
-			    margin-right: 13px;
-			    background: url("../img/sprites.png") 0 -120px no-repeat;
-
-			    &:last-child {
-				    margin-right: 0;
-			    }
-
-			    a {
-				    width: 100%;
-				    height: 100%;
-				    cursor: pointer;
-				    display: inline-block;
-
-				    &.in {
-					    background: url("../img/sprites.png") -36px -120px no-repeat;
-				    }
-				    &.tw {
-					    background: url("../img/sprites.png") -108px -120px no-repeat;
-				    }
-				    &.youtube {
-					    background: url("../img/sprites.png") -72px -120px no-repeat;
-				    }
-				    &.fb {
-					    background: url("../img/sprites.png") -144px -120px no-repeat;
-				    }
-			    }
-		    }
-	    }
-
-	    .footer-phone {
-		    float: left;
-		    width: 160px;
-		    margin-left: 85px;
-		    position: relative;
-
-		    span {
-			    color: #fff;
-			    font-size: 18px;
-			    font-weight: 700;
-			    text-shadow: 0px 1px 1px rgba(152, 140, 117, 1);
-		    }
-
-		    i {
-			    top: 35px;
-			    left: -32px;
-				width: 21px;
-			    height: 21px;
-			    position: absolute;
-			    background: url("../img/footer-phone.png") 0 0 no-repeat;
-		    }
-	    }
-
-	    .footer-email {
-		    float: left;
-		    width: 160px;
-		    margin-left: 80px;
-		    position: relative;
-
-		    a {
-			    color: #fff;
-			    font-size: 18px;
-			    font-weight: 700;
-			    text-decoration: none;
-			    text-transform: uppercase;
-			    text-shadow: 0px 1px 1px rgba(152, 140, 117, 1);
-		    }
-
-		    i {
-			    top: 35px;
-			    left: -32px;
-			    width: 21px;
-			    height: 16px;
-			    position: absolute;
-			    background: url("../img/footer-mail.png") 0 0 no-repeat;
-		    }
-	    }
-
-		.footer-www {
-			float: right;
-			width: 140px;
-			position: relative;
-
-			a {
-				color: #fff;
-				font-size: 18px;
-				font-weight: 700;
-				text-decoration: none;
-				text-transform: uppercase;
-				text-shadow: 0px 1px 1px rgba(152, 140, 117, 1);
-			}
-
-			i {
-				top: 35px;
-				left: -32px;
-				width: 22px;
-				height: 22px;
-				position: absolute;
-				background: url("../img/footer-www.png") 0 0 no-repeat;
-			}
-		}
-
 	}
 }
 
+.hidden-large  {
+
+	@media  (min-width: @large) {
+		display: none;
+	}
+}
 
 
 

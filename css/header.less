@@ -7,7 +7,7 @@
 		width: 70px;
 		height: 74px;
 		cursor: pointer;
-		background: url("../img/sprites.png") 0 -156px no-repeat;
+		background: url("../img/sprites.png") 0 -120px no-repeat;
 	}
 
 	.logo {
@@ -117,16 +117,17 @@
 		}
 	}
 
-	@media  (min-width: 590px) {
+	@media  (min-width: @small) {
 		.btn-card {
 			display: inline-block;
 		}
 	}
 
-	@media  (min-width: 960px) {
+	@media  (min-width: @large) {
 		height: 95px;
 		padding-top: 10px;
-		background-image: none;
+
+		background: url("../img/bg.jpg");
 
 		#pull {
 			display: none;
@@ -212,20 +213,23 @@
 		}
 	}
 
-	.close {
-		top:13px;
-		right: 17px;
-		width: 16px;
-		height: 16px;
-		cursor: pointer;
-		position: absolute;
-		background: url("../img/topnav-close.png") 0 0 no-repeat;
+	.topnav-inner {
+		position: relative;
+
+		.close {
+			top:13px;
+			right: 17px;
+			width: 16px;
+			height: 16px;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/topnav-close.png") 0 0 no-repeat;
+		}
 	}
 
-	@media  (min-width: 960px) {
-		top: 85px;
-		left: 59px;
-		right: 13px;
+
+	@media  (min-width: @large) {
+		top: 95px;
 		height: 48px;
 		display: block;
 		background: no-repeat;
@@ -236,6 +240,7 @@
 			width: 100%;
 			display: table;
 			list-style: none;
+			background-image: none;
 
 			li {
 				padding: 0;
@@ -321,8 +326,14 @@
 			}
 		}
 
-		.close {
-			display: none;
+		.topnav-inner {
+			margin-left: 59px;
+			margin-right: 13px;
+			background-image: none;
+
+			.close {
+				display: none;
+			}
 		}
 	}
 }
@@ -333,6 +344,7 @@
 	color: #333333;
 	font-size: 14px;
 	background: #fff;
+	font-family: @font2;
 	margin-right: 50px;
 
 	div {
@@ -356,5 +368,53 @@
 		}
 	}
 
+	@media  (min-width: @large) {
+		display: none;
+	}
+}
 
+.promo {
+	height: 168px;
+	margin-right: 50px;
+	padding: 25px 20px;
+	text-transform: uppercase;
+	background: #010101 url("../img/bg-nav-m.jpg") -160px 0 no-repeat;
+
+	.promo-title {
+		color: #fff;
+		margin-bottom: 15px;
+		font: 600 18px/20px @font1;
+	}
+
+	.promo-text {
+		color: #99ccff;
+		margin-bottom: 25px;
+		font: 600 9px/14px @font1;
+	}
+
+	.btn-promo {
+		width: 120px;
+		height: 40px;
+		padding: 10px 15px;
+		outline: none;
+		color: #99ccff;
+		cursor: pointer;
+		text-decoration: none;
+		display: inline-block;
+		border: 2px solid #99ccff;
+		font: 700 14px/16px @font1;
+		background: url("../img/promo-arrow.png") 95px 10px no-repeat;
+	}
+
+	@media  (min-width: @small) {
+		background-position: 20px 0;
+	}
+
+	@media  (min-width: @medium) {
+		background-position: 0 0;
+	}
+
+	@media  (min-width: @large) {
+		display: none;
+	}
 }
