@@ -21,3 +21,13 @@ $(function() {
         }
     });
 });
+
+
+$(document).ready(function(){
+    $('.responsive').masonry({
+        itemSelector: '.col',
+        singleMode: true,
+        isResizable: true,
+        isAnimated: false
+    });
+});

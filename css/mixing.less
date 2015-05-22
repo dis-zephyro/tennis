@@ -61,7 +61,8 @@
 	visibility: hidden;
 }
 
-
+.row:before,
+.row:after,
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -70,11 +71,13 @@
 	display: table; /* 2 */
 }
 
+.row:after,
 .clearfix:after,
 .container:after {
 	clear: both;
 }
 
+.row,
 .clearfix,
 .container {
 	*zoom: 1;
