@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 
 
 @import "mixing.less";
@@ -104,19 +104,69 @@ body {
 	}
 }
 
+.breadcrumbs {
+	padding: 0;
+	list-style: none;
+	margin: 0 0 12px 0;
+
+	li {
+		color: #505151;
+		font-size: 14px;
+		font-weight: 600;
+		display: inline-block;
+
+		a {
+			color: #505151;
+			text-decoration: underline;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	>li+li:before {
+		content: "→";
+		color: #868686;
+		padding: 0 5px;
+		text-decoration: none;
+	}
+}
+
 .content {
 	z-index: 5;
 	background: #fff;
 	position: relative;
-	padding: 20px;
+	padding: 20px 20px 50px 20px;
 
 
 	@media  (min-width: @large) {
 		margin-top: 5px;
 		margin-left: 59px;
 		margin-right: 13px;
-		padding-top: 63px;
+		padding-top: 60px;
 		.box-shadow( 0px 0px 5px 0px rgba(0, 0, 0, 0.26));
+
+	}
+
+	.row {
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-bottom: 10px;
+
+		.col {
+			padding: 0 20px;
+		}
+
+		@media  (min-width: @small) {}
+
+		@media  (min-width: @medium) {
+			.col {
+				float: left;
+				width: 50%;
+			}
+		}
+
+		@media  (min-width: @large) {}
 	}
 }
 
@@ -193,6 +243,7 @@ body {
 			}
 
 			h4 {
+				color: #fff;
 				padding: 0;
 				max-width: 140px;
 				margin: 3px 0 10px 0;
@@ -604,7 +655,36 @@ body {
 	}
 }
 
+.thumbnail {
+	padding-bottom: 30px;
+	margin-bottom: 25px;
+	font-family: @font2;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
 
+	.thumbnail-image {
+		padding: 3px;
+		display: block;
+		cursor: pointer;
+		border: 1px solid #ccc;
+		margin-bottom: 15px;
+	}
+
+	h4 {
+		margin-bottom: 13px;
+	}
+
+	.news-date {
+		color: #989898;
+		margin-bottom: 10px;
+		font: italic 14px/18px @font2;
+	}
+
+	p {
+		margin-bottom: 0;
+		line-height: 20px;
+	}
+}
 
 .visible-large {
 	display: none;
@@ -629,7 +709,30 @@ body {
    ========================= */
 
 h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	color: #303030;
+	font-weight: 600;
+	font-family: @font2;
+}
 
+h1 {
+	color: #303030;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+
+h4 {
+	color: #303030;
+	font-size: 18px;
+	margin-bottom: 10px;
+
+	a {
+		color: #736099;
+		text-decoration: none;
+		border-bottom: 1px solid #e0dde8;
+	}
 }
 
 p {
