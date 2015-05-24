@@ -31,3 +31,13 @@ $(document).ready(function(){
         isAnimated: false
     });
 });
+
+
+$(".photo-item").fancybox({
+    'padding' : 0
+});
+
+$('.text-show').click(function(){
+    $('.text-hide').show();
+    $('.text-show').hide();
+});

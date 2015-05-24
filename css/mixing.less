@@ -65,20 +65,24 @@
 .row:after,
 .clearfix:before,
 .clearfix:after,
+.form-group:before,
+.form-group:after,
 .container:before,
-.container:after {
+.container:after, {
 	content: " "; /* 1 */
 	display: table; /* 2 */
 }
 
 .row:after,
 .clearfix:after,
+.form-group:after,
 .container:after {
 	clear: both;
 }
 
 .row,
 .clearfix,
+.form-group,
 .container {
 	*zoom: 1;
 }
