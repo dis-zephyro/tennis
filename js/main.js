@@ -41,3 +41,23 @@ $('.text-show').click(function(){
     $('.text-hide').show();
     $('.text-show').hide();
 });
+
+
+var $tabs = $('.maps').tabs();
+
+$tabs.tabs('enable', 1);
+
+// Яндекс Карта
+
+ymaps.ready(init);
+
+var myMap;
+
+function init(){
+    myMap = new ymaps.Map("yamap", {
+        center: [55.5682,37.4115],
+        zoom: 14,
+        controls: ['smallMapDefaultSet']
+    });
+    myMap.behaviors.disable('scrollZoom');
+}

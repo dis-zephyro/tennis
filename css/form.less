@@ -137,6 +137,34 @@
 	}
 }
 
+.form-group {
+	margin-bottom: 27px;
+
+	.form-label {
+		display: block;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+
+	.form-control {
+		width: 100%;
+		outline: none;
+		display: block;
+		color: #303030;
+		font-size: 14px;
+		background: #fff;
+		line-height: 20px;
+		padding: 10px 20px;
+		border: 1px solid #cdcdcd;
+	}
+
+	::-webkit-input-placeholder {color:#9a9a9a;}
+	::-moz-placeholder          {color:#9a9a9a;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#9a9a9a;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#9a9a9a;}
+}
 
 .order-form {
 	color: #fff;
@@ -184,6 +212,22 @@
 		height: 487px;
 		background: url("../img/bg_form-order-xl.jpg") top left no-repeat;
 
+		.form-group {
+			margin-bottom: 8px;
+
+			.form-label {
+				float: left;
+				width: 130px;
+				line-height: 22px;
+				padding-top: 10px;
+			}
+
+			.form-control {
+				float: right;
+				width: 400px;
+			}
+		}
+
 		.order-form-inner {
 			width: 573px;
 			padding: 35px 0 60px 40px;
@@ -199,49 +243,99 @@
 	}
 }
 
+.message-form {
+	padding-top: 12px;
 
-
-.form-group {
-	margin-bottom: 27px;
-
-	.form-label {
-		display: block;
-		font-size: 14px;
-		font-weight: 600;
-		line-height: 18px;
-		margin-bottom: 10px;
+	.half-box {
+		width: 100%;
 	}
 
-	.form-control {
-		width: 100%;
-		outline: none;
-		display: block;
-		color: #303030;
-		font-size: 14px;
-		background: #fff;
-		line-height: 20px;
-		padding: 10px 20px;
-		border: 1px solid #cdcdcd;
+	.form-group {
+		margin-bottom: 23px;
+
+		textarea.form-control {
+			height: 102px;
+		}
+	}
+
+	.form-bottom {
+		padding-top: 0;
+		margin-top: -25px;
+
+		.help-message {
+			margin-bottom: 25px;
+		}
+
+		.btn {
+			float: right;
+		}
+	}
+
+	.form-bottom {
+		padding-top: 7px;
+
+		.help-message {
+			font-size: 14px;
+			padding-top: 10px;
+			font-style: italic;
+		}
+	}
+
+	@media  (min-width: @small) {
+
+		.form-bottom {
+			margin-top: 0;
+			padding-top: 4px;
+
+			.help-message {
+				width: 50%;
+				float: left;
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	@media  (min-width: @large) {
-		margin-bottom: 8px;
+		padding-top: 12px;
 
-		.form-label {
+		.half-box {
 			float: left;
-			width: 130px;
-			line-height: 22px;
-			padding-top: 10px;
+			width: 415px;
 		}
 
-		.form-control {
-			float: right;
-			width: 400px;
+		.form-group {
+			margin-bottom: 18px;
+
+			.form-label {
+				float: left;
+				width: 100px;
+				line-height: 22px;
+				padding-top: 10px;
+
+				&.label-large{
+					width: 140px;
+				}
+			}
+
+			.form-control {
+				float: left;
+				width: 272px;
+			}
+
+			textarea.form-control {
+				width: 748px;
+				height: 192px;
+			}
 		}
+
+	    .form-bottom {
+		    padding-top: 4px;
+
+		    .help-message {
+			    width: 50%;
+			    float: left;
+			    padding-left: 100px;
+		    }
+	    }
 	}
-
-	::-webkit-input-placeholder {color:#9a9a9a;}
-	::-moz-placeholder          {color:#9a9a9a;}/* Firefox 19+ */
-	:-moz-placeholder           {color:#9a9a9a;}/* Firefox 18- */
-	:-ms-input-placeholder      {color:#9a9a9a;}
 }

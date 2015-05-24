@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tennis.ru - Главная</title>
+    <title>Tennis.ru - Контакты</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,11 +14,6 @@
     <link rel="stylesheet/less" href="css/main.less">
     <script src="js/vendor/less.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -64,10 +59,66 @@
     <div class="content">
         <ul class="breadcrumbs">
             <li><a href="#">Главная</a></li>
-            <li>Новости</li>
+            <li>Контакты</li>
         </ul>
-        <h1></h1>
+        <h2>Контакты</h2>
+        <ul class="contact-list clearfix">
+            <li class="item1">г. Москва, ул. Летовская Малая, 8</li>
+            <li class="item2">+ 7 (495) 980 10 10</li>
+            <li class="item3">mirtennisa@gmail.com</li>
+        </ul>
+        <div class="maps">
+            <div class="map-inner">
+                <div id="schema">
+                    <img class="img-responsive" src="images/schema.jpg" alt="Схема проезда">
+                </div>
+                <div id="yamap"></div>
+            </div>
+            <ul class="tab-link">
+                <li><a class="schema" href="#schema">Упрощенная схема</a></li>
+                <li><a class="yamap" href="#yamap">Яндекс.Карты</a></li>
+            </ul>
+        </div>
+        <h3>Как проехать на машине</h3>
+        <p>Метро “Юго-Западная”, первый вагон из центра, далее вверх по лестнице, из дверей направо, при выходе из метро поворачиваете направо, перед Вами автобусная остановка. </p>
+        <p>Доехать до нас можно на автобусах 707 маршрута и маршрутках 343го. Ехать до остановки "Инженерный комплекс ЗВС (Западная водопроводная станция)".</p>
+        <div class="content-image">
+            <img class="img-responsive" src="images/road-auto.jpg" alt="Как проехать на машине">
+        </div>
+        <h3>Как пройти пешком</h3>
+        <p>По Боровскому шоссе проезжаете примерно 3 км до поворота на Производственную улицу - светофор со стрелкой налево. Далее по Производственной улице проезжаете 1 км 500 метров до поворота направо на улицу Родниковая. Продолжаете движение по Родниковой улице ещё примерно 2 км и видите справа наш офис.</p>
+        <div class="content-image">
+            <img class="img-responsive" src="images/road-afoot.jpg" alt="Как пройти пешком">
+        </div>
+        <h3>Напишите нам</h3>
+        <div class="message-form">
+            <form class="form">
+                <div class="clearfix">
+                    <div class="half-box">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя:<sup class="text-red">*</sup></label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="half-box float-right">
+                        <div class="form-group">
+                            <label class="form-label label-large">Как связаться:<sup class="text-red">*</sup></label>
+                            <input type="text" class="form-control float-right" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Сообщение:</label>
+                    <textarea class="form-control" placeholder="Ваши дополнительные пожелания..."></textarea>
+                </div>
+                <div class="form-bottom clearfix">
+                    <div class="help-message text-red">* Поля обязательные для заполнения</div>
+                    <button class="btn" type="submit">отправить сообщение</button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <div class="tabs">
         <a href="#" class="tab1"></a>
         <a href="#" class="tab2"></a>
@@ -137,7 +188,9 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/vendor/masonry.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 
