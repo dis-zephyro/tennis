@@ -1,0 +1,19 @@
+.schedule {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+}
+.schedule .schedule-time {
+  float: left;
+  width: 90px;
+}
+.schedule .schedule-time li {
+  height: 85px;
+  background: #e3dfeb;
+  border-bottom: 1px solid #ccc;
+}
+.schedule .schedule-days {
+  float: left;
+  width: 270px;
+}

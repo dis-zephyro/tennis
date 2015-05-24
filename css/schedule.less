@@ -1,0 +1,350 @@
+.schedule {
+	position: relative;
+	margin-left: -20px;
+	margin-right: -20px;
+	border-bottom: 1px solid #ccc;
+
+	.schedule-time {
+		float: left;
+		width: 90px;
+
+		li {
+			color: #333;
+			height: 87px;
+			padding-top: 30px;
+			padding-left: 30px;
+			background: #e3dfeb;
+			font: 700 14px/18px @font2;
+			border-bottom: 1px solid #ccc;
+
+			&:first-child {
+				color: #fff;
+				height: 70px;
+				font-weight: 600;
+				padding-top: 12px;
+				text-shadow: -1px 2px 2px rgba(0, 0, 0, .25);
+				background: url("../img/schedule-time-header.jpg") right top no-repeat;
+			}
+
+			&:last-child {
+				border-bottom: 4px solid #fff;
+			}
+		}
+	}
+
+	.schedule-days {
+		float: left;
+		width: 270px;
+
+		ul {
+			float: left;
+			width: 270px;
+
+			li {
+				height: 87px;
+				background: #fff;
+				padding: 5px 0 5px 5px;
+				border-bottom: 1px solid #ccc;
+
+				.classes-time {
+					color: #303030;
+					display: block;
+					font-size: 16px;
+					line-height: 18px;
+					font-weight: 600;
+					margin-bottom: 4px;
+				}
+				.classes-name {
+					color: #000;
+					display: block;
+					font-size: 16px;
+					line-height: 18px;
+					font-weight: 600;
+					margin-bottom: 6px;
+					white-space: nowrap;
+				}
+				.classes-trainer {
+					color: #666;
+					font-size: 16px;
+					line-height: 18px;
+					font-weight: 600;
+
+					i {
+						display: inline;
+					}
+				}
+				.classes-place {
+					color: #666;
+					font-size: 16px;
+					line-height: 18px;
+					font-weight: 600;
+				}
+
+				&:first-child {
+					color: #fff;
+					height: 70px;
+					line-height: 1;
+					font-weight: 600;
+					padding-top: 10px;
+					text-align: center;
+					background: url("../img/schedule-day-header.jpg") left top;
+
+					.schedule-weekday {
+						display: block;
+						font-size: 18px;
+						margin-bottom: 10px;
+						text-shadow: -1px 2px 2px rgba(0, 0, 0, .25);
+					}
+
+					.schedule-date {
+						display: block;
+						font-size: 24px;
+						text-shadow: -1px 2px 2px rgba(0, 0, 0,.25);
+					}
+				}
+
+				&:last-child {
+					border-bottom: 4px solid #fff;
+				}
+			}
+		}
+
+		.color-box {
+			width: 100%;
+			height: 100%;
+			padding: 4px 10px;
+
+			&.pinkish {
+				background: #ffcccc;
+			}
+			&.gray {
+				background: #ccc;
+			}
+			&.light-green {
+				background: #ccffcc;
+			}
+			&.orange {
+				background: #ffcc99;
+			}
+			&.cyan {
+				background: #ccffff;
+			}
+			&.red {
+				background: #fe8282;
+			}
+		}
+	}
+
+	.schedule-nav {
+		top: 30px;
+		width: 12px;
+		z-index: 100;
+		height: 18px;
+		display: block;
+		cursor: pointer;
+		position: absolute;
+
+		&.prev {
+			left: 105px;
+			background: url("../img/schedule-nav.png") 0 0 no-repeat;
+		}
+
+		&.next {
+			right: 15px;
+			background: url("../img/schedule-nav.png") -12px 0 no-repeat;
+		}
+	}
+
+	@media  (min-width: @small) {
+
+		.schedule-time {
+			li {
+				height: 85px;
+			}
+		}
+
+		.schedule-days {
+			width: 500px;
+
+			ul {
+				width: 33.33%;
+
+				li {
+					height: 85px;
+					padding: 4px 0 4px 4px;
+
+					.classes-time {
+						font-size: 14px;
+						margin-bottom: 0;
+					}
+					.classes-name {
+						font-size: 16px;
+						margin-bottom: 4px;
+					}
+					.classes-trainer {
+						display: block;
+						font-size: 11px;
+						line-height: 14px;
+					}
+					.classes-place {
+						font-size: 11px;
+						display: block;
+						line-height: 14px;
+					}
+				}
+			}
+		}
+
+		.schedule-nav {
+
+			&.prev {
+				left: 95px;
+			}
+
+			&.next {
+				right: 20px;
+			}
+		}
+	}
+
+	@media  (min-width: @medium) {
+
+		.schedule-time {
+			li {
+				height: 87px;
+			}
+		}
+
+		.schedule-days {
+			width: 550px;
+
+			ul {
+				width: 50%;
+
+				li {
+					height: 87px;
+
+					.classes-time {
+						font-size: 16px;
+						margin-bottom: 0;
+					}
+					.classes-name {
+						font-size: 16px;
+						margin-bottom: 4px;
+
+					}
+					.classes-trainer {
+						display: inline;
+						font-size: 16px;
+						line-height: 18px;
+					}
+					.classes-place {
+						display: inline;
+						font-size: 16px;
+						line-height: 18px;
+					}
+				}
+			}
+		}
+
+		.schedule-nav {
+
+			&.prev {
+				left: 105px;
+			}
+
+			&.next {
+				right: 20px;
+			}
+		}
+	}
+
+	@media  (min-width: @large) {
+		margin-left: 0;
+		margin-right: 0;
+
+		.schedule-time {
+			width: 70px;
+
+			li {
+				height: 87px;
+				padding-left: 10px;
+			}
+		}
+
+		.schedule-days {
+			width: 778px;
+
+			ul {
+				width: 20%;
+
+				li {
+					height: 87px;
+					padding: 6px 0 4px 2px;
+
+					.classes-time {
+						font-size: 14px;
+						margin-bottom: 0;
+					}
+					.classes-name {
+						font-size: 16px;
+						margin-bottom: 4px;
+					}
+					.classes-trainer {
+						display: block;
+						font-size: 11px;
+						line-height: 14px;
+					}
+					.classes-place {
+						font-size: 11px;
+						display: block;
+						line-height: 14px;
+					}
+				}
+			}
+		}
+
+		.schedule-nav {
+
+			&.prev {
+				left: 78px;
+			}
+
+			&.next {
+				right: 10px;
+			}
+		}
+	}
+}
+
+/*
+	.hide-xs {
+		display: none;
+
+		@media  (min-width: @small) {
+			display: block;
+		}
+	}
+
+	.hide-m {
+
+		@media  (min-width: @medium) {
+			display: none;
+		}
+
+		@media  (min-width: @large) {
+			display: block;
+		}
+	}
+
+	.hide-sm {
+		@media  (min-width: @small) {
+			display: none;
+		}
+
+		@media  (min-width: @large) {
+			display: block;
+		}
+	}
+
+	*/

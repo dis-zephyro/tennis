@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="js/vendor/slick/slick.css">
     <link rel="stylesheet/less" href="css/main.less">
     <script src="js/vendor/less.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -67,6 +68,945 @@
             <li>Новости</li>
         </ul>
         <h2>Расписание</h2>
+        <div class="schedule clearfix">
+            <div class="schedule-time clearfix">
+                <ul class="schedule-time-col">
+                    <li>Время<i></i></li>
+                    <li>07:00</li>
+                    <li>08:00</li>
+                    <li>09:00</li>
+                    <li>10:00</li>
+                    <li>11:00</li>
+                    <li>12:00</li>
+                    <li>13:00</li>
+                    <li>14:00</li>
+                    <li>15:00</li>
+                    <li>16:00</li>
+                    <li>17:00</li>
+                    <li>18:00</li>
+                    <li>19:00</li>
+                    <li>20:00</li>
+                    <li>21:00</li>
+                    <li>22:00</li>
+                </ul>
+            </div>
+            <div class="schedule-days clearfix">
+                <!-- 30 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Понедельник</span>
+                        <span class="schedule-date">30</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box red">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Борьба</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 31 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Вторник</span>
+                        <span class="schedule-date">31</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 01 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Среда</span>
+                        <span class="schedule-date">1</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box red">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Борьба</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 02 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Четверг</span>
+                        <span class="schedule-date">2</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 03 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Пятница</span>
+                        <span class="schedule-date">3</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box red">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Борьба</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 04 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Суббота</span>
+                        <span class="schedule-date">4</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box gray">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Power ball</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 05 -->
+                <ul>
+                    <li>
+                        <span class="schedule-weekday">Воскресенье</span>
+                        <span class="schedule-date">5</span>
+                    </li>
+                    <li>
+                        <!-- 07:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 08:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 09:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 10:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 11:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 12:00 -->
+                        <div class="color-box">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 13:00 -->
+                        <div class="color-box orange">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Yoga</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 14:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 15:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 16:00 -->
+                        <div class="color-box light-green">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Abs + Stretching</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 17:00 -->
+                        <div class="color-box cyan">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Functional Top</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 18:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 19:00 -->
+                        <div class="color-box">
+
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 20:00 -->
+                        <div class="color-box red">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Борьба</span>
+                            <span class="classes-trainer">Лена<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 21:00 -->
+                        <div class="color-box pinkish">
+                            <span class="classes-time">55 мин.</span>
+                            <span class="classes-name">Latina Dance</span>
+                            <span class="classes-trainer">Наташа<i>, </i></span>
+                            <span class="classes-place">Зал №1</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 22:00 -->
+                        <div class="schedule-days-item">
+                            <div class="color-box"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span class="schedule-nav prev"></span>
+            <span class="schedule-nav next"></span>
+        </div>
     </div>
     <div class="tabs">
         <a href="#" class="tab1"></a>
@@ -137,7 +1077,10 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/vendor/slick/slick.min.js"></script>
 <script src="js/vendor/masonry.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 

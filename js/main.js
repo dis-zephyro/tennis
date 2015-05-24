@@ -1,3 +1,6 @@
+
+// Адаптивное меню
+
 $(function() {
     var pull = $('#pull');
     menu = $('.topnav');
@@ -22,6 +25,7 @@ $(function() {
     });
 });
 
+// Адаптивные блоки разделов фото, новости и видео
 
 $(document).ready(function(){
     $('.responsive').masonry({
@@ -32,10 +36,13 @@ $(document).ready(function(){
     });
 });
 
+// Галерея
 
 $(".photo-item").fancybox({
     'padding' : 0
 });
+
+// Показ\скрытие блока
 
 $('.text-show').click(function(){
     $('.text-hide').show();
@@ -43,9 +50,11 @@ $('.text-show').click(function(){
 });
 
 
-var $tabs = $('.maps').tabs();
+// Переключение схемы проезда
 
+var $tabs = $('.maps').tabs();
 $tabs.tabs('enable', 1);
+
 
 // Яндекс Карта
 
@@ -61,3 +70,44 @@ function init(){
     });
     myMap.behaviors.disable('scrollZoom');
 }
+
+// Расписание - слайдер
+
+$('.schedule-days').slick({
+    arrows: false,
+    autoplay: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+
+        {
+            breakpoint: 980,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.schedule-nav.prev').click(function(){
+    $('.schedule-days').slick('slickPrev');
+});
+
+$('.schedule-nav.next').click(function(){
+    $('.schedule-days').slick('slickNext');
+});
