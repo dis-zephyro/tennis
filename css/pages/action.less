@@ -1,0 +1,92 @@
+.action {
+	overflow: hidden;
+	position: relative;
+
+	li {
+		float: left;
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 35px;
+
+		.action-image {
+			padding: 3px;
+			outline: none;
+			display: block;
+			cursor: pointer;
+			overflow: hidden;
+			margin-bottom: 15px;
+			border: 1px solid #cdcdcd;
+		}
+
+		.action-text {
+			overflow: hidden;
+			position: relative;
+		}
+
+		h4 {
+			a {
+				//text-decoration: none;
+				//border-bottom: 1px solid #e2dee9;
+			}
+		}
+
+		.action-time {
+			color: #303030;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 20px;
+			margin-bottom: 10px;
+			font-family: @font2;
+		}
+
+		p {
+			color: #303030;
+			font-size: 16px;
+			margin-bottom: 0;
+			line-height: 20px;
+		}
+	}
+
+	@media  (min-width: @medium) {
+
+		li {
+			padding-bottom: 30px;
+
+			.action-image {
+				float: left;
+				width: 250px;
+				margin-bottom: 0;
+				margin-right: 30px;
+			}
+
+			.action-text {
+				float: left;
+				width: 320px;
+			}
+		}
+	}
+
+	@media  (min-width: @large) {
+		margin-right: -30px;
+		margin-left: -30px;
+
+		li {
+			float: left;
+			width: 50%;
+			padding-left: 30px;
+			padding-right: 30px;
+
+			.action-image {
+				width: 100%;
+				float: inherit;
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+
+			.action-text {
+				width: 100%;
+				float: inherit;
+			}
+		}
+	}
+}

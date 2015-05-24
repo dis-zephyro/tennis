@@ -25,11 +25,30 @@ $(function() {
     });
 });
 
-// Адаптивные блоки разделов фото, новости и видео
+// Адаптивные блоки разделов фото, новости, акции и видео
 
 $(document).ready(function(){
+
+});
+
+
+$(window).load(function () {
     $('.responsive').masonry({
         itemSelector: '.col',
+        singleMode: true,
+        isResizable: true,
+        isAnimated: false
+    });
+
+    $('.action').masonry({
+        itemSelector: '.action-item',
+        singleMode: true,
+        isResizable: true,
+        isAnimated: false
+    });
+
+    $('.organization').masonry({
+        itemSelector: 'li',
         singleMode: true,
         isResizable: true,
         isAnimated: false
