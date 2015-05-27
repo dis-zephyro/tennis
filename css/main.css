@@ -2528,9 +2528,11 @@
 }
 .special {
   background: #fff;
+  min-height: 100%;
 }
 .special body {
   background: transparent;
+  min-height: 100%;
 }
 .club {
   height: 380px;
@@ -2700,7 +2702,7 @@
   }
   .club .club-text {
     font-size: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
   }
   .portal {
     width: 370px;
@@ -2719,7 +2721,7 @@
   .portal .portal-text {
     font-size: 12px;
     line-height: normal;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .portal .column {
     width: 100%;
@@ -2727,6 +2729,51 @@
   .portal .btn-blue {
     margin-top: 0;
   }
+}
+.special-nav-inner {
+  height: 640px;
+  background: url("../img/special_portal2-960.jpg") right bottom no-repeat;
+}
+.special-nav-inner .club {
+  background-image: none !important;
+}
+.special-nav-inner .portal {
+  padding-top: 40px;
+  background-image: none !important;
+}
+.special-nav-inner .portal .portal-name {
+  margin-bottom: 18px;
+}
+.special-nav-inner .portal .portal-text {
+  margin-bottom: 40px;
+}
+.club-nav {
+  width: 448px;
+  list-style: none;
+  text-align: center;
+  margin: 0 0 0 55px;
+  padding: 30px 0 0 0;
+}
+.club-nav li {
+  float: left;
+  width: 112px;
+  padding: 0 21px;
+  margin-bottom: 12px;
+}
+.club-nav li a {
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.club-nav li img {
+  margin-bottom: 9px;
+}
+.club-nav li span {
+  height: 25px;
+  font-size: 9px;
+  display: block;
+  overflow: hidden;
 }
 .schedule {
   position: relative;
@@ -3193,7 +3240,7 @@
   }
 }
 /* Base styles
-   ========================== */
+   ======================== */
 * {
   webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
