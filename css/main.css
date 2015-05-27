@@ -240,6 +240,38 @@
   color: #fff;
   background: #989898 url("../img/icon-goback.png") 58px -33px no-repeat;
 }
+.btn-border {
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 8px 24px;
+  border: 2px solid #ccc;
+  background: transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.btn-border.btn-green {
+  color: #d1ffb8;
+  border-color: #cbffb5;
+  padding: 8px 34px 8px 14px;
+  background: rgba(0, 0, 0, 0.2) url("../img/btn-green.png") 92px 9px no-repeat;
+}
+.btn-border.btn-blue {
+  color: #a8cbfd;
+  border-color: #a8cbfd;
+  padding: 8px 34px 8px 14px;
+  background: rgba(0, 0, 0, 0.2) url("../img/btn-blue.png") 92px 9px no-repeat;
+}
 .form-group {
   margin-bottom: 27px;
   /* Firefox 19+ */
@@ -2492,6 +2524,208 @@
   }
   .maps .tab-link li {
     margin-right: 50px;
+  }
+}
+.special {
+  background: #fff;
+}
+.special body {
+  background: transparent;
+}
+.club {
+  height: 380px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  background: url("../img/special_club_360.jpg") top center no-repeat;
+}
+.club .club-logo {
+  width: 117px;
+  height: 117px;
+  margin: 23px auto 5px auto;
+}
+.club .club-name {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.club .club-text {
+  color: #66ff66;
+  font-size: 9px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.portal {
+  height: 180px;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  background: url("../img/special_portal-590.jpg") -190px -35px no-repeat;
+}
+.portal:before {
+  top: 0;
+  left: 0;
+  z-index: 20;
+  content: "";
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  background: url("../img/special_shadov-360.png") 0 0 no-repeat;
+}
+.portal .column {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.portal .portal-logo {
+  width: 51px;
+  height: 51px;
+  overflow: hidden;
+  margin: 10px auto 10px auto;
+}
+.portal .portal-name {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.portal .portal-text {
+  color: #8cbae9;
+  font-size: 9px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.portal .btn-blue {
+  margin-top: 75px;
+}
+@media (min-width: 640px) {
+  .club {
+    height: 460px;
+    background: url("../img/special_club_590.jpg") top center no-repeat;
+  }
+  .club .club-logo {
+    width: 157px;
+    height: 157px;
+    margin: 43px auto 5px auto;
+  }
+  .club .club-name {
+    font-size: 70px;
+  }
+  .club .club-text {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .portal {
+    height: 240px;
+    background: url("../img/special_portal-590.jpg") top center no-repeat;
+  }
+  .portal:before {
+    display: none;
+  }
+  .portal .portal-name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .portal .portal-text {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .portal .column {
+    width: 60%;
+  }
+  .portal .btn-blue {
+    margin-top: 0;
+  }
+}
+@media (min-width: 720px) {
+  .club {
+    float: left;
+    width: 410px;
+    height: 280px;
+    background: url("../img/special_club_640.jpg") top center no-repeat;
+  }
+  .club .club-logo {
+    width: 97px;
+    height: 97px;
+    margin: 13px auto 5px auto;
+  }
+  .club .club-name {
+    font-size: 40px;
+  }
+  .club .club-text {
+    font-size: 9px;
+    margin-bottom: 15px;
+  }
+  .portal {
+    float: left;
+    width: 230px;
+    height: 280px;
+    background: url("../img/special_portal-640.jpg") top center no-repeat;
+  }
+  .portal .portal-name {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .portal .portal-text {
+    font-size: 9px;
+    line-height: normal;
+    margin-bottom: 80px;
+  }
+  .portal .column {
+    width: 100%;
+  }
+  .portal .btn-blue {
+    margin-top: 0;
+  }
+}
+@media (min-width: 980px) {
+  .club {
+    width: 590px;
+    height: 639px;
+    background: url("../img/special_club_960.jpg") top center no-repeat;
+  }
+  .club .club-logo {
+    width: 147px;
+    height: 147px;
+    margin: 13px auto 5px auto;
+  }
+  .club .club-name {
+    font-size: 67px;
+  }
+  .club .club-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .portal {
+    width: 370px;
+    height: 639px;
+    background: url("../img/special_portal-960.jpg") top center no-repeat;
+  }
+  .portal .portal-logo {
+    width: 97px;
+    height: 97px;
+    margin: 80px auto 20px auto;
+  }
+  .portal .portal-name {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .portal .portal-text {
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .portal .column {
+    width: 100%;
+  }
+  .portal .btn-blue {
+    margin-top: 0;
   }
 }
 .schedule {

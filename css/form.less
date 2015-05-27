@@ -137,6 +137,41 @@
 	}
 }
 
+
+.btn-border {
+	margin: 0;
+	outline: none;
+	cursor: pointer;
+	overflow: hidden;
+	text-decoration: none;
+	display: inline-block;
+
+	width: 120px;
+	height: 40px;
+	color: #ccc;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 8px 24px;
+	border: 2px solid #ccc;
+	background: transparent;
+	.border-radius(2px);
+
+	&.btn-green {
+		color: #d1ffb8;
+		border-color: #cbffb5;
+		padding: 8px 34px 8px 14px;
+		background: rgba(0,0,0, .2) url("../img/btn-green.png") 92px 9px no-repeat;
+	}
+
+	&.btn-blue {
+		color: #a8cbfd;
+		border-color: #a8cbfd;
+		padding: 8px 34px 8px 14px;
+		background: rgba(0,0,0, .2) url("../img/btn-blue.png") 92px 9px no-repeat;
+	}
+}
+
 .form-group {
 	margin-bottom: 27px;
 
