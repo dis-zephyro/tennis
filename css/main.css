@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(../font/PalatinoLinotype-Bold.css);
 /* Helper classes
    ========================= */
 .ir {
@@ -2552,6 +2553,7 @@
   font-weight: 700;
   margin-bottom: 5px;
   text-transform: uppercase;
+  font-family: 'PalatinoLinotype-Bold';
 }
 .club .club-text {
   color: #66ff66;
@@ -3240,7 +3242,7 @@
   }
 }
 /* Base styles
-   ======================== */
+   ========================= */
 * {
   webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
