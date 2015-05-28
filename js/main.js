@@ -130,3 +130,12 @@ $('.schedule-nav.prev').click(function(){
 $('.schedule-nav.next').click(function(){
     $('.schedule-days').slick('slickNext');
 });
+
+
+$('.navigation').slick({
+    arrows: false,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true
+});
