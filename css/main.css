@@ -2544,7 +2544,7 @@
   }
 }
 .special {
-  background: #fff;
+  background: #000;
   min-height: 100%;
 }
 .special body {
@@ -3502,7 +3502,7 @@
   }
 }
 /* Base styles
-   ============================ */
+   ============================== */
 * {
   webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
