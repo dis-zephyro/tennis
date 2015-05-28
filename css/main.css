@@ -273,6 +273,22 @@
   padding: 8px 34px 8px 14px;
   background: rgba(0, 0, 0, 0.2) url("../img/btn-blue.png") 92px 9px no-repeat;
 }
+.btn-goto {
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  color: #a8cbfd;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 2px solid #a8cbfd;
+  padding: 8px 40px 8px 18px;
+  background: rgba(0, 0, 0, 0.2) url("../img/btn-blue.png") 92px 9px no-repeat;
+}
 .form-group {
   margin-bottom: 27px;
   /* Firefox 19+ */
@@ -2732,22 +2748,253 @@
     margin-top: 0;
   }
 }
-.special-nav-inner {
-  height: 640px;
-  background: url("../img/special_portal2-960.jpg") right bottom no-repeat;
+.screen {
+  height: 560px;
+  position: relative;
+  padding: 22px 10px 0 10px;
+  background: #000000 url("../img/screen360.jpg") top center no-repeat;
 }
-.special-nav-inner .club {
-  background-image: none !important;
+.screen ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.special-nav-inner .portal {
-  padding-top: 40px;
-  background-image: none !important;
+.screen li {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 6px;
 }
-.special-nav-inner .portal .portal-name {
-  margin-bottom: 18px;
+.screen li a {
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
 }
-.special-nav-inner .portal .portal-text {
-  margin-bottom: 40px;
+.screen li span {
+  height: 25px;
+  font-size: 9px;
+  display: block;
+  overflow: hidden;
+  line-height: 11px;
+  text-align: center;
+}
+.screen .icon {
+  width: 54px;
+  margin: 0 auto 5px auto;
+}
+.screen .screen-text {
+  top: 495px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.screen .screen-text .column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.screen .screen-text .column.column-left {
+  padding-left: 26px;
+  text-align: left;
+}
+.screen .screen-text .screen-logo {
+  width: 51px;
+  height: 51px;
+  display: none;
+  overflow: hidden;
+  margin: 10px auto 10px auto;
+}
+.screen .screen-text .screen-name {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.screen .screen-text .screen-choice {
+  color: #8cbae9;
+  font-size: 9px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.screen .screen-text .screen-slogan {
+  color: #8cbae9;
+  font-size: 9px;
+  display: none;
+  line-height: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.screen .slick-dots {
+  top: -20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.screen .slick-dots li {
+  margin: 0 4px;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+  float: inherit;
+  overflow: hidden;
+  background: #666;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.screen .slick-dots li.slick-active {
+  background: #fff;
+}
+.screen .slick-dots li button {
+  opacity: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+@media (min-width: 640px) {
+  .screen {
+    height: 700px;
+    padding: 30px 25px 0 25px;
+    background: #000000 url("../img/screen590.jpg") top center no-repeat;
+  }
+  .screen li {
+    width: 20%;
+    margin-bottom: 18px;
+  }
+  .screen .icon {
+    width: 64px;
+  }
+  .screen .screen-text {
+    top: 480px;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  .screen .screen-text .column {
+    width: 60%;
+    padding-left: 60px;
+  }
+  .screen .screen-text .column.column-left {
+    padding-left: 60px;
+    text-align: center;
+  }
+  .screen .screen-text .screen-logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  .screen .screen-text .screen-name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .screen .screen-text .screen-choice {
+    display: none;
+  }
+  .screen .screen-text .screen-slogan {
+    font-size: 11px;
+    display: block;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 720px) {
+  .screen {
+    height: 280px;
+    padding: 9px 70px 0 15px;
+    background: #000000 url("../img/screen640.jpg") top center no-repeat;
+  }
+  .screen li {
+    width: 14.25%;
+    margin-bottom: 3px;
+  }
+  .screen .icon {
+    width: 54px;
+  }
+  .screen .screen-text {
+    right: 0;
+    top: 194px;
+    left: 508px;
+    position: absolute;
+  }
+  .screen .screen-text .column {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+  }
+  .screen .screen-text .column.column-left {
+    display: none;
+    padding-left: 60px;
+    text-align: center;
+  }
+  .screen .btn-goto {
+    padding-left: 0;
+    background-position: 16px 9px;
+  }
+  .screen .btn-goto span {
+    display: none;
+  }
+}
+@media (min-width: 980px) {
+  .screen {
+    height: 640px;
+    padding: 40px 460px 0 40px;
+    background: #000000 url("../img/screen960.jpg") top center no-repeat;
+  }
+  .screen li {
+    width: 25%;
+    padding: 0 22px;
+    margin-bottom: 15px;
+  }
+  .screen .icon {
+    width: 64px;
+  }
+  .screen .screen-text {
+    top: 117px;
+    left: 590px;
+    right: 0;
+    position: absolute;
+  }
+  .screen .screen-text .column {
+    text-align: center;
+  }
+  .screen .screen-text .column.column-left {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+  }
+  .screen .screen-text .screen-logo {
+    width: 97px;
+    height: 97px;
+    display: block;
+    margin: 0 auto 32px auto;
+  }
+  .screen .screen-text .screen-name {
+    color: #fff;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .screen .screen-text .screen-slogan {
+    color: #8cbae9;
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+  .screen .btn-goto {
+    padding: 8px 40px 8px 18px;
+    background-position: 92px 9px;
+  }
+  .screen .btn-goto span {
+    display: inline;
+  }
 }
 .club-nav {
   width: 448px;
@@ -2776,6 +3023,19 @@
   font-size: 9px;
   display: block;
   overflow: hidden;
+}
+.special-nav-inner .club {
+  background-image: none !important;
+}
+.special-nav-inner .portal {
+  padding-top: 40px;
+  background-image: none !important;
+}
+.special-nav-inner .portal .portal-name {
+  margin-bottom: 18px;
+}
+.special-nav-inner .portal .portal-text {
+  margin-bottom: 40px;
 }
 .schedule {
   position: relative;
@@ -3242,7 +3502,7 @@
   }
 }
 /* Base styles
-   ========================= */
+   ============================ */
 * {
   webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
