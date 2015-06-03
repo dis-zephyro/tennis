@@ -232,3 +232,42 @@ $('.nav-next').click(function(){
 $('.service-slider').delegate('img','click', function(){
     $('.slider-image').attr('src',$(this).attr('src'));
 });
+
+
+$('.service-gallery').slick({
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+
+        {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$(".gallery-item").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
