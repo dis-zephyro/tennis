@@ -100,7 +100,7 @@ $('.schedule-days').slick({
     responsive: [
 
         {
-            breakpoint: 980,
+            breakpoint: 960,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -138,4 +138,97 @@ $('.navigation').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true
+});
+
+
+// отзывы - слайдер
+
+$('.reply').slick({
+    arrows: false,
+    dots: true,
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+
+        {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.reply-nav-prev').click(function(){
+    $('.reply').slick('slickPrev');
+});
+
+$('.reply-nav-next').click(function(){
+    $('.reply').slick('slickNext');
+});
+
+// услуги - галерея
+
+$('.service-slider').slick({
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    slidesToShow: 4,
+    centerMode: true,
+    slidesToScroll: 1,
+    responsive: [
+
+        {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.nav-prev').click(function(){
+    $('.service-slider').slick('slickPrev');
+});
+
+$('.nav-next').click(function(){
+    $('.service-slider').slick('slickNext');
+});
+
+$('.service-slider').delegate('img','click', function(){
+    $('.slider-image').attr('src',$(this).attr('src'));
 });

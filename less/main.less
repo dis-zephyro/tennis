@@ -22,6 +22,7 @@
 @import "special.less";
 @import "schedule.less";
 @import "action.less";
+@import "service.less";
 @import "organization.less";
 
 /* Base styles
@@ -153,10 +154,6 @@ body {
 	line-height: 1.25;
 	padding: 25px 20px 50px 20px;
 
-	@media  (min-width: @small) {
-	}
-
-
 	@media  (min-width: @large) {
 		margin-top: 49px;
 		margin-left: 59px;
@@ -276,6 +273,14 @@ body {
 		@media  (min-width: @large) {
 			display: none;
 		}
+	}
+
+	.text-detail {
+		color: #238ad3;
+		cursor: pointer;
+		margin-bottom: 10px;
+		display: inline-block;
+		text-decoration: underline;
 	}
 }
 
@@ -679,4 +684,11 @@ nav ul {
 
 .text-yellow {
 	color: #dc9f00;
+}
+
+
+.text-lead {
+	color: #6e6096;
+	font-size: 18px;
+	text-transform: uppercase;
 }
