@@ -241,7 +241,6 @@
 			margin: 0;
 			padding: 0;
 			width: 100%;
-			display: table;
 			list-style: none;
 			background-image: none;
 
@@ -250,7 +249,7 @@
 				height: 49px;
 				line-height: 49px;
 				text-align: center;
-				display: table-cell;
+				float: left;
 				position: relative;
 				background: url("../img/bg_topnav.jpg") -5px 0 no-repeat;
 
@@ -289,7 +288,7 @@
 					.border-radius(0 5px 0 0);
 
 					&::after {
-						display: none !important;
+
 					}
 				}
 
@@ -298,6 +297,7 @@
 					height: 100%;
 					color: #fff;
 					font-size: 10px;
+					padding: 0 22px;
 					display: inline-block;
 					text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
 
@@ -338,6 +338,12 @@
 				display: none;
 			}
 		}
+
+	    &.brown {
+		    li {
+			    background: url("../img/bg_topnav-brown.png") -5px 0 no-repeat;
+		    }
+	    }
 	}
 }
 
