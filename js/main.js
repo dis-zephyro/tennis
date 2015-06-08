@@ -90,6 +90,16 @@ function init(){
     myMap.behaviors.disable('scrollZoom');
 }
 
+// Главная - слайдер
+
+$('.tile-slide').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false
+});
+
 // Расписание - слайдер
 
 $('.schedule-days').slick({
