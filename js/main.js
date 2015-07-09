@@ -55,11 +55,6 @@ $(window).load(function () {
     });
 });
 
-// Галерея
-
-$(".photo-item").fancybox({
-    'padding' : 0
-});
 
 // Показ\скрытие блока
 
@@ -195,13 +190,22 @@ $('.reply-nav-next').click(function(){
 
 // услуги - галерея
 
-$('.service-slider').slick({
-    arrows: false,
-    dots: false,
-    autoplay: false,
-    slidesToShow: 4,
-    centerMode: true,
+$('.slider-nav').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    autoplay: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+
+$('.service-slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    asNavFor: '.service-slider',
     responsive: [
 
         {
@@ -231,6 +235,17 @@ $('.service-slider').slick({
     ]
 });
 
+$('.service-slider').slick({
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    focusOnSelect: true,
+    asNavFor: '.service-slider-main'
+});
+
 $('.nav-prev').click(function(){
     $('.service-slider').slick('slickPrev');
 });
@@ -239,10 +254,16 @@ $('.nav-next').click(function(){
     $('.service-slider').slick('slickNext');
 });
 
+/*
 $('.service-slider').delegate('img','click', function(){
     $('.slider-image').attr('src',$(this).attr('src'));
 });
+*/
 
+
+// Галерея
+
+$(".photo-item").fancybox();
 
 $('.service-gallery').slick({
     arrows: false,
@@ -277,7 +298,6 @@ $('.service-gallery').slick({
     ]
 });
 
-$(".gallery-item").fancybox({
-    'padding' : 0,
-    'closeBtn' : false
-});
+$(".gallery-img").fancybox();
+
+$(".slider-image-popup").fancybox();

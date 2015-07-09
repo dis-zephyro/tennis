@@ -25,6 +25,7 @@
 @import "service.less";
 @import "organization.less";
 
+
 /* Base styles
    ============================== */
 
@@ -692,4 +693,64 @@ nav ul {
 	color: #6e6096;
 	font-size: 18px;
 	text-transform: uppercase;
+}
+
+
+
+/**/
+
+
+.fancybox-close {
+	height: 12px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	cursor: pointer;
+	z-index: 8040;
+	height: auto;
+	width: 30px;
+	height: 30px;
+	background-image: none;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #fff;
+	-moz-box-shadow: -1px 1px 5px rgba(102,102,102,.75);
+	-webkit-box-shadow: -1px 1px 5px rgba(102,102,102,.75);
+	box-shadow: -1px 1px 5px rgba(102,102,102,.75);
+
+	&:before {
+		background: url('../img/sprites.png') no-repeat -80px 0;
+		content: "";
+		position: absolute;
+		height: auto;
+		width: 12px;
+		height: 12px;
+		margin: -6px 0 0 -6px;
+		top: 50%;
+		left: 50%;
+	}
+}
+
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	height: auto;
+	width: 64px;
+	height: 64px;
+	margin-top: -32px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+
+.fancybox-next span {
+	right: 10px;
+	background: url("../img/slider-nav.png") -64px 0 no-repeat;
+}
+
+.fancybox-prev span {
+	left: 10px;
+
+	background: url("../img/slider-nav.png") 0 0 no-repeat;
 }

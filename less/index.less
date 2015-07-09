@@ -16,18 +16,6 @@
 			position: relative;
 			background: #000;
 
-			&.img2 {
-				background: url("../images/img_tile2s.jpg") 0 0 no-repeat;
-				background-size: cover;
-			}
-			&.img3 {
-				background: url("../images/img_tile3s.jpg")  100% 100% no-repeat;
-				background-size: cover;
-			}
-			&.img4 {
-				background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
-				background-size: cover;
-			}
 			&.img5 {
 				background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
 				background-size: cover;
@@ -52,10 +40,7 @@
 				background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
 				background-size: cover;
 			}
-			&.img11 {
-				background: url("../images/img_tile11_360.jpg") 0 0 no-repeat;
-				background-size: cover;
-			}
+
 			&.img12 {
 				background: url("../images/img_tile12_360.jpg") 0 0 no-repeat;
 				background-size: cover;
@@ -66,9 +51,12 @@
 			color: #fff;
 			width: 100%;
 			height: 100%;
+			z-index: 10;
+			display: block;
 			padding: 10px 20px;
 			overflow: hidden;
 			position: absolute;
+			text-decoration: none;
 
 			h1 {
 				color: #fff;
@@ -122,12 +110,6 @@
 			width: 338px;
 			height: 220px;
 			background-position: 0 0;
-
-			.tile-img {
-				width: 100%;
-				height: 200px;
-				background: url("../images/tile-xl_small.png") 0 0 no-repeat;
-			}
 		}
 
 		&.tile-l {
@@ -170,18 +152,7 @@
 			.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
 
 			.tile-inner {
-				&.img2 {
-					background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
-					background-size: cover;
-				}
-				&.img3 {
-					background: url("../images/img_tile3xl.jpg")  100% 100% no-repeat;
-					background-size: cover;
-				}
-				&.img4 {
-					background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
 
-				}
 				&.img5 {
 					background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
 					background-size: auto;
@@ -256,11 +227,6 @@
 				width: 548px;
 				height: 350px;
 				background-position: 0 -400px;
-
-				.tile-img {
-					height: 330px;
-					background: url("../images/tile-xl_med.png") 0 0 no-repeat;
-				}
 			}
 
 			&.tile-l {
@@ -304,18 +270,7 @@
 			.box-shadow(0px -3px 4px 0px rgba(102, 102, 102, 0.3));
 
 			.tile-inner {
-				&.img2 {
-					background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
-					background-size: cover;
-				}
-				&.img3 {
-					background: url("../images/img_tile3m.jpg")  100% 100% no-repeat;
-					background-size: cover;
-				}
-				&.img4 {
-					background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
 
-				}
 				&.img5 {
 					background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
 					background-size: auto;
@@ -380,12 +335,6 @@
 				width: 618px;
 				height: 260px;
 				background-position: -560px 0;
-
-				.tile-img {
-					z-index: 1;
-					height: 240px;
-					background: url("../images/tile-xl_large.jpg") 0 0 no-repeat;
-				}
 			}
 
 			&.tile-l {
@@ -429,17 +378,6 @@
 			.box-shadow(-1px 3px 4px 0px rgba(0, 0, 0, 0.3));
 
 			.tile-inner {
-				&.img2 {
-					background: url("../images/img_tile2l.jpg") 0 0 no-repeat;
-				}
-				&.img3 {
-					background: url("../images/img_tile3l.jpg")  0 0  no-repeat;
-					background-size: cover;
-				}
-				&.img4 {
-					background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
-					background-size: cover;
-				}
 				&.img5 {
 					background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
 					background-size: cover;
@@ -507,12 +445,6 @@
 				width: 848px;
 				height: 330px;
 				background-position: -560px -400px;
-
-				.tile-img {
-					z-index: 1;
-					height: 310px;
-					background: url("../images/tile-xl_extra.jpg") 0 0 no-repeat;
-				}
 			}
 
 			&.tile-l {
@@ -565,3 +497,61 @@
 
 	}
 }
+
+
+.tile-img {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+
+	.img360 {
+		display: block;
+	}
+
+	.img590 {
+		display: none;
+	}
+
+	.img640 {
+		display: none;
+	}
+
+	.img960 {
+		display: none;
+	}
+
+	@media  (min-width: @small) {
+
+		.img360 {
+			display: none;
+		}
+
+		.img590 {
+			display: block;
+		}
+
+	}
+
+	@media  (min-width: @medium) {
+
+		.img590 {
+			display: none;
+		}
+
+		.img640 {
+			display: block;
+		}
+	}
+
+	@media  (min-width: @large) {
+
+		.img640 {
+			display: none;
+		}
+
+		.img960 {
+			display: block;
+		}
+	}
+}
+

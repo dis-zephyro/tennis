@@ -819,6 +819,8 @@
   height: 168px;
   margin-right: 50px;
   padding: 25px 20px;
+  display: block;
+  cursor: pointer;
   text-transform: uppercase;
   background: #010101 url("../img/bg-nav-m.jpg") -160px 0 no-repeat;
 }
@@ -906,6 +908,7 @@
 .footer .footer-box-title {
   color: #fff;
   height: 52px;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   line-height: 52px;
@@ -1989,18 +1992,6 @@
   position: relative;
   background: #000;
 }
-.tiles .tile .tile-inner.img2 {
-  background: url("../images/img_tile2s.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img3 {
-  background: url("../images/img_tile3s.jpg") 100% 100% no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img4 {
-  background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
 .tiles .tile .tile-inner.img5 {
   background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -2025,10 +2016,6 @@
   background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
   background-size: cover;
 }
-.tiles .tile .tile-inner.img11 {
-  background: url("../images/img_tile11_360.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
 .tiles .tile .tile-inner.img12 {
   background: url("../images/img_tile12_360.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -2037,9 +2024,12 @@
   color: #fff;
   width: 100%;
   height: 100%;
+  z-index: 10;
+  display: block;
   padding: 10px 20px;
   overflow: hidden;
   position: absolute;
+  text-decoration: none;
 }
 .tiles .tile .tile-text h1 {
   color: #fff;
@@ -2086,11 +2076,6 @@
   height: 220px;
   background-position: 0 0;
 }
-.tiles .tile.tile-xl .tile-img {
-  width: 100%;
-  height: 200px;
-  background: url("../images/tile-xl_small.png") 0 0 no-repeat;
-}
 .tiles .tile.tile-l {
   width: 338px;
   height: 160px;
@@ -2126,17 +2111,6 @@
     -webkit-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
-  }
-  .tiles .tile .tile-inner.img2 {
-    background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img3 {
-    background: url("../images/img_tile3xl.jpg") 100% 100% no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img4 {
-    background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
   }
   .tiles .tile .tile-inner.img5 {
     background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
@@ -2203,10 +2177,6 @@
     height: 350px;
     background-position: 0 -400px;
   }
-  .tiles .tile.tile-xl .tile-img {
-    height: 330px;
-    background: url("../images/tile-xl_med.png") 0 0 no-repeat;
-  }
   .tiles .tile.tile-l {
     width: 548px;
     height: 320px;
@@ -2243,17 +2213,6 @@
     -webkit-box-shadow: 0px -3px 4px 0px rgba(102, 102, 102, 0.3);
     -moz-box-shadow: 0px -3px 4px 0px rgba(102, 102, 102, 0.3);
     box-shadow: 0px -3px 4px 0px rgba(102, 102, 102, 0.3);
-  }
-  .tiles .tile .tile-inner.img2 {
-    background: url("../images/img_tile2xl.jpg") 0 0 no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img3 {
-    background: url("../images/img_tile3m.jpg") 100% 100% no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img4 {
-    background: url("../images/img_tile4xm.jpg") 0 0 no-repeat;
   }
   .tiles .tile .tile-inner.img5 {
     background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
@@ -2312,11 +2271,6 @@
     height: 260px;
     background-position: -560px 0;
   }
-  .tiles .tile.tile-xl .tile-img {
-    z-index: 1;
-    height: 240px;
-    background: url("../images/tile-xl_large.jpg") 0 0 no-repeat;
-  }
   .tiles .tile.tile-l {
     width: 618px;
     height: 190px;
@@ -2353,17 +2307,6 @@
     -webkit-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.3);
-  }
-  .tiles .tile .tile-inner.img2 {
-    background: url("../images/img_tile2l.jpg") 0 0 no-repeat;
-  }
-  .tiles .tile .tile-inner.img3 {
-    background: url("../images/img_tile3l.jpg") 0 0 no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img4 {
-    background: url("../images/img_tile4xl.jpg") 0 0 no-repeat;
-    background-size: cover;
   }
   .tiles .tile .tile-inner.img5 {
     background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
@@ -2425,11 +2368,6 @@
     height: 330px;
     background-position: -560px -400px;
   }
-  .tiles .tile.tile-xl .tile-img {
-    z-index: 1;
-    height: 310px;
-    background: url("../images/tile-xl_extra.jpg") 0 0 no-repeat;
-  }
   .tiles .tile.tile-l {
     width: 415px;
     height: 240px;
@@ -2469,6 +2407,47 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+.tile-img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.tile-img .img360 {
+  display: block;
+}
+.tile-img .img590 {
+  display: none;
+}
+.tile-img .img640 {
+  display: none;
+}
+.tile-img .img960 {
+  display: none;
+}
+@media (min-width: 640px) {
+  .tile-img .img360 {
+    display: none;
+  }
+  .tile-img .img590 {
+    display: block;
+  }
+}
+@media (min-width: 720px) {
+  .tile-img .img590 {
+    display: none;
+  }
+  .tile-img .img640 {
+    display: block;
+  }
+}
+@media (min-width: 960px) {
+  .tile-img .img640 {
+    display: none;
+  }
+  .tile-img .img960 {
+    display: block;
+  }
 }
 .contact-list {
   margin-bottom: 10px;
@@ -3688,8 +3667,9 @@
   position: relative;
 }
 .service-slider-inner .service-slider-image {
+  height: 115px;
   margin-bottom: 20px;
-  display: none;
+  overflow: hidden;
 }
 .service-slider-inner .slider-nav {
   top: 185px;
@@ -3707,16 +3687,47 @@
   right: 20px;
   background: url("../img/slider-nav.png") -64px 0 no-repeat;
 }
+@media (min-width: 640px) {
+  .service-slider-inner .service-slider-image {
+    height: 235px;
+  }
+}
+@media (min-width: 720px) {
+  .service-slider-inner .service-slider-image {
+    height: 260px;
+  }
+}
 @media (min-width: 960px) {
   .service-slider-inner .service-slider-image {
+    height: 440px;
     display: block;
   }
   .service-slider-inner .slider-nav {
     display: block;
   }
 }
+.service-slider-main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.service-slider-main li {
+  float: left;
+  padding: 3px;
+  background: #fff;
+  margin: 0 4px 0 5px;
+  border: 1px solid #cdcdcd;
+}
+@media (min-width: 960px) {
+  .service-slider-main li {
+    padding: 0;
+    margin: 0 4px 0 5px;
+    border: none;
+  }
+}
 .service-slider {
   padding: 0;
+  display: none;
   list-style: none;
   margin: 0 0 25px 0;
 }
@@ -3724,15 +3735,16 @@
   float: left;
   padding: 3px;
   width: 318px;
+  cursor: pointer;
   background: #fff;
   margin: 0 4px 0 5px;
   border: 1px solid #cdcdcd;
 }
-.service-slider li img {
-  cursor: pointer;
-}
 @media (min-width: 960px) {
   .service-slider {
+    height: 90px;
+    display: block;
+    overflow: hidden;
     margin: 0 -20px 25px -20px;
   }
   .service-slider li {
@@ -4462,4 +4474,54 @@ nav ul {
   color: #6e6096;
   font-size: 18px;
   text-transform: uppercase;
+}
+/**/
+.fancybox-close {
+  height: 12px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+  z-index: 8040;
+  height: auto;
+  width: 30px;
+  height: 30px;
+  background-image: none;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  -moz-box-shadow: -1px 1px 5px rgba(102, 102, 102, 0.75);
+  -webkit-box-shadow: -1px 1px 5px rgba(102, 102, 102, 0.75);
+  box-shadow: -1px 1px 5px rgba(102, 102, 102, 0.75);
+}
+.fancybox-close:before {
+  background: url('../img/sprites.png') no-repeat -80px 0;
+  content: "";
+  position: absolute;
+  height: auto;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  top: 50%;
+  left: 50%;
+}
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  height: auto;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+.fancybox-next span {
+  right: 10px;
+  background: url("../img/slider-nav.png") -64px 0 no-repeat;
+}
+.fancybox-prev span {
+  left: 10px;
+  background: url("../img/slider-nav.png") 0 0 no-repeat;
 }
