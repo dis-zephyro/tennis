@@ -1992,34 +1992,6 @@
   position: relative;
   background: #000;
 }
-.tiles .tile .tile-inner.img5 {
-  background: url("../images/img_tile5l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img6 {
-  background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img7 {
-  background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img8 {
-  background: url("../images/img_tile8l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img9 {
-  background: url("../images/img_tile9l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img10 {
-  background: url("../images/img_tile10l.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
-.tiles .tile .tile-inner.img12 {
-  background: url("../images/img_tile12_360.jpg") 0 0 no-repeat;
-  background-size: cover;
-}
 .tiles .tile .tile-text {
   color: #fff;
   width: 100%;
@@ -2314,10 +2286,6 @@
   }
   .tiles .tile .tile-inner.img6 {
     background: url("../images/img_tile6l.jpg") 0 0 no-repeat;
-    background-size: cover;
-  }
-  .tiles .tile .tile-inner.img7 {
-    background: url("../images/img_tile7l.jpg") 0 0 no-repeat;
     background-size: cover;
   }
   .tiles .tile .tile-inner.img8 {
@@ -3929,6 +3897,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  overflow: hidden;
 }
 @media (min-width: 640px) {
   .container {

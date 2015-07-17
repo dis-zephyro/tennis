@@ -4,6 +4,7 @@
 $(function() {
     var pull = $('#pull');
     menu = $('.topnav');
+    var w = $(window).width();
 
     $(pull).on('click', function(e) {
         e.preventDefault();
@@ -11,7 +12,6 @@ $(function() {
     });
 
     $(window).resize(function(){
-        var w = $(window).width();
         if(w > 960 && menu.is(':hidden')) {
             menu.removeAttr('style');
         }
